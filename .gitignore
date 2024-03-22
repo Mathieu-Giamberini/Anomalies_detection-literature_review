@@ -1,3 +1,10 @@
 #paper PDF
 0_paper/
 Citavi Attachments/
+
+#LateX compile file
+2_theReview/**/*.aux
+2_theReview/**/*.fdb_latexmk
+2_theReview/**/*.fls
+2_theReview/**/*.log
+2_theReview/**/*.gz
