@@ -8,3 +8,6 @@ Citavi Attachments/
 2_theReview/**/*.fls
 2_theReview/**/*.log
 2_theReview/**/*.gz
+
+#Python
+.venv/
