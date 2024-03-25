@@ -2,6 +2,7 @@ from dash import Dash, html
 import dash_cytoscape as cyto
 from openpyxl import load_workbook
 
+import pyvis
 from pyvis.network import Network
 import networkx as nx
 
@@ -23,16 +24,18 @@ index = {}
 i = 8
 run = True
 while run:
+    fullName = sheet[f"H{i}"].value
     name = sheet[f"I{i}"].value
     parent = sheet[f"J{i}"].value
-    
+    id = sheet[f"G{i}"].value
+
     run = not (name is None and parent is None)
-    name = str(i) if name is None else name
+    name = id if name is None else name
 
     if run :
         index[name] = i 
 
-        nx_graph.add_node(i, title=name, label=name, )
+        nx_graph.add_node(i, title=fullName, label=name)
         i += 1
 
 i = 8
