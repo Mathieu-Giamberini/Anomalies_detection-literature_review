@@ -5,13 +5,13 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,Cara,,,,,
 ,,,,,,Id,Categorie/Mathode,Abrevation,Parent,Depth,Children,Children_,Interest,Supervise,variate ,Genaral approche ,Advatages,Draw back,Source
-,,,,,,1,Anomalie detection,AD,,0,102,102,,,,Detecte anamalie in time series,,,
+,,,,,,1,Anomalie detection,AD,,0,105,105,,,,Detecte anamalie in time series,,,
 ,,,,,,90,Data deviation AD,Deviation,AD,1,1,1,,,,,,,Wu 2016
 ,,,,,,5,Predictive model,Predictive,AD,1,66,66,,,,,,,Choi et al. 2021
 ,,,,,,4,Deep leaning,Deep,,0,0,,,,,Artificial neural networks with hiden layer,,,
 ,,,,,,2,Classical methods ,Classical,AD,1,10,10,,,,,,,Choi et al. 2021
 ,,,,,,13,Autoencoder ,AE,Dim reduc,3,16,16,,Un,Multi,"Take the data, go throw the AE if the loss function is hight, Anomalie",,,Choi et al. 2021
-,,,,,,3,Clustering-based methods ,Cluster,AD,1,21,21,,,,,,,Choi et al. 2021
+,,,,,,3,Clustering-based methods ,Cluster,AD,1,24,24,,,,,,,Choi et al. 2021
 ,,,,,,68,Dimensional reduction,Dim reduc,Predictive,2,21,21,4,,,,,,[] Choi et al. 2021
 ,,,,,,55,Graph Neural Network,GNN,Predictive,2,7,7,,,,,,,Choi et al. 2021
 ,,,,,,14,Convolutional neural networks ,CNN,Predictive,2,6,6,,,,,,,Choi et al. 2021
@@ -30,8 +30,8 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,15,Long short term memory neural networks,LSTM,RNN,3,1,1,,,,,,,Choi et al. 2021
 ,,,,,,29,Gated recurrent units ,GRU,RNN,3,1,1,,,,,,,Choi et al. 2021
 ,,,,,,8,Fourier transfom,FT,Classical,2,1,1,,,,,,,Choi et al. 2021
-,,,,,,12,Gaussian mixture model ,GMM,Cluster,2,3,3,,,,,,,[86] Choi et al. 2021
-,,,,,,112,Principale component analysis,PCA,Cluster,2,1,1,,,,,,,
+,,,,,,12,Gaussian mixture model ,GMM,Cluster,2,4,4,,,,,,,[86] Choi et al. 2021
+,,,,,,112,Principale component analysis,PCA,Cluster,2,2,2,,,,,,,
 ,,,,,,9,Linear model-based methods ,Linear,Classical,2,0,,,,,,,Inability to manipulate multidimensional data or address a shortage (Choi et al. 2021),Choi et al. 2021
 ,,,,,,11,Density-based spatial clustering of applications with noise ,DBSCAN,Cluster,2,0,,,,,,,,[87] Choi et al. 2021
 ,,,,,,19,Stacked autoencoder,SAE,AE,4,0,,,Un,Multi,,,,Choi et al. 2021
@@ -75,12 +75,13 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,63,,HTM-based,HTM,3,0,,,,,,,,[121] Choi et al. 2021
 ,,,,,,64,,RADM,HTM,3,0,,,,,,,,[69] Choi et al. 2021
 ,,,,,,65,,SCAN,Cluster,2,0,,,,,,,,[89] Choi et al. 2021
-,,,,,,66,,MapReduce,Cluster,2,0,,,,,,,,"[94, 96, 98] Choi et al. 2021"
+,,,,,,66,,MapReduce,Cluster,2,0,,,,,,,,"[94, 96, 98]
+Choi et al. 2021"
 ,,,,,,67,,k-means++ ,Cluster,2,0,,,,,,,,[99] Choi et al. 2021
 ,,,,,,69,,,IU,4,0,,4,,,,,,[100] Choi et al. 2021
 ,,,,,,70,,ODCA,IU,4,0,,4,,,,,,[101] Choi et al. 2021
 ,,,,,,71,recursive principal component analysis ,R-PCA,PCA,3,0,,4,,,,,,[102] Choi et al. 2021
-,,,,,,72,,DAGMM,GMM,3,1,1,4,Un,Multi,Applie a GMM on the a latensapce of a AE,,,Zong et al.
+,,,,,,72,,DAGMM,GMM,3,1,1,4,Un,Multi,Applie a GMM on the a latensapce of a AE,,,Zong et al. 2018
 ,,,,,,73,Sparse Recurrent Neural Network based Anomaly Detection,SPREAD,Dim reduc,3,0,,4,,,SPREAD combines the advantages of dimensionality reduction as well as temporal encoding to learn a robust temporal model of high-dimensional time (Gugulothu et al. 2018),,,[104] Choi et al. 2021 Gugulothu et al. 2018
 ,,,,,,76,Pairwise inner-product,PIP,2D-Mx,3,0,,4,,,,,,[] Choi et al. 2021
 ,,,,,,77,Pairwise phase,PP,2D-Mx,3,0,,4,,,,,,[] Choi et al. 2021
@@ -90,7 +91,8 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,82,,AddGraph,GNN,3,0,,,,,,,,[106] Choi et al. 2021
 ,,,,,,83,,MTAD-TF,GNN,3,0,,,,,,,,[107] Choi et al. 2021
 ,,,,,,84,,GTA,GNN,3,0,,,,,,,,[109] Choi et al. 2021
-,,,,,,85,,Attention,,0,0,,4,,,,,,"[73, 109, 120] Choi et al. 2021"
+,,,,,,85,,Attention,,0,0,,4,,,,,,"[73, 109, 120] 
+Choi et al. 2021"
 ,,,,,,86,Derivative distance with DTW and LCSS,DD - LCSS -DTW,Distance,3,0,,,,,,,,[] Choi et al. 2021
 ,,,,,,87,Edit Distance on Real Sequence,ERP,Distance,3,0,,,,,,,,[7] Wu 20216
 ,,,,,,88,,ROCK,Distance,3,0,,,,,,,,Wu 20216
@@ -116,10 +118,12 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,109,Adversarial Time–Frequency Reconstruction Network for Unsupervised Anomaly Detection,ATF-UAD,,0,0,,,Un,Multi,,,,Wang et al. 2023
 ,,,,,,110,Knowledge-based target variables into inner feature selectors,ILSFS,,0,0,,,,,,,,Li et al. 2024
 ,,,,,,111,Shapley Additive explanation,SHAP,,0,0,,,,,,,,[30] Li et al. 2024
-,,,,,,113,,,,0,0,,,,,,,,
-,,,,,,114,,,,0,0,,,,,,,,
-,,,,,,115,,,,0,0,,,,,,,,
-,,,,,,116,,,,0,0,,,,,,,,
+,,,,,,113,Robust PCA,RPCA,PCA,3,0,,,,,,,,"[Huber 2011] 
+Zong et al. 2018"
+,,,,,,114,multivariate Gaussian Models,MGM,Cluster,2,0,,,,,,,,"[Barnett & Lewis 1984]
+Zong et al. 2018"
+,,,,,,115,Log-linear mixture ,LogLM,GMM,3,0,,,Yes,,Approximate GMM (Zong et al. 2018),,,
+,,,,,,116,Correlation of sensor value with efficentcy variation,,,0,0,,,,,,,,Mathieu
 ,,,,,,117,,,,0,0,,,,,,,,
 ,,,,,,118,,,,0,0,,,,,,,,
 ,,,,,,119,,,,0,0,,,,,,,,
