@@ -2,10 +2,10 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,
-,,,,,,,,2024-03-25 17:29:27.800000,,,,,,,,
-,,,,,,,,,,,,,,,,
+,,,,,N,Not relevant,,,,,,,,,,
+,,,,,NR,Not a review,,,,,,,,,,
+,,,,,Y,"Yes, relevant",,2024-03-26 09:49:52.470000,,,,,,,,
+,,,,,-,,,,,,,,,,,
 ,,exploring paper count,18,,,,,1st,,,2nd,,,3rd,,
 ,,Filter,research phase,id,relevant,Title,#pages,Start,end,1-time,Start,end,2-time,Start,end,3-time
 ,,"ReaschGate, Anomaly detection review",exploring phase,1,-,Toward the automation of mechanized tunneling,,2024-03-11 10:30:23,2024-03-11 11:12:22.540000,00:41:59.540000,,,00:00:00,,,00:00:00
@@ -16,10 +16,10 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,exploring phase,6,Y,An Experimental Evaluation of Time Series Classiﬁcation - 2018 - Górecki ,,2024-03-12 14:27:25.240000,2024-03-12 15:31:41.250000,01:04:16.010000,,,00:00:00,,,00:00:00
 ,,,exploring phase,7,,An exhaustive comparison of distance measures in the classification of time series with 1NN method - 2024 - Górecki ,,2024-03-12 15:58:49.640000,2024-03-12 16:31:20.580000,00:32:30.940000,,,00:00:00,,,00:00:00
 ,,,exploring phase,8,Y,A SURVEY OF RESEARCH ON ANOMALY DETECTION FOR TIME SERIES  - 2016 - U-SHENG WU ,6,2024-03-14 10:42:43.610000,2024-03-14 10:50:51.890000,00:08:08.280000,,,00:00:00,,,00:00:00
-,,,exploring phase,9,Y,Deep Learning for Anomaly Detection in Time-Series Data - 2021 - KUKJIN ,23,2024-03-14 11:00:55.800000,2024-03-14 11:47:52.170000,00:46:56.370000,done,,,,,00:00:00
+,,,exploring phase,9,Y,Deep Learning for Anomaly Detection in Time-Series Data - 2021 - Choi ,23,2024-03-14 11:00:55.800000,2024-03-14 11:47:52.170000,00:46:56.370000,done,,,,,00:00:00
 ,,,exploring phase,10,Y,An Experimental Evaluation of Anomaly Detection in Time - 2023 - Zhang,14,2024-03-14 13:42:33.380000,2024-03-14 14:02:55.740000,00:20:22.360000,,,00:00:00,,,00:00:00
 ,,,DAGMM,11,-,DEEP AUTOENCODING GAUSSIAN MIXTURE MODEL FOR UNSUPERVISED ANOMALY DETECTION - 2018 - Zong,19,2024-03-21 09:52:40.680000,2024-03-21 10:30:38.810000,00:37:58.130000,,,00:00:00,,,00:00:00
-,,,DAGMM,12,-,Pyramid reconstruction assisted deep autoencoding Gaussian mixture model for industrial fault detection - 2023 - Ying,26,2024-03-21 10:58:00.530000,2024-03-21 11:47:22.570000,00:49:22.040000,,,00:00:00,,,00:00:00
+,,,DAGMM,12,-,Pyramid reconstruction assisted deep autoencoding Gaussian mixture model for industrial fault detection - 2023 - Tian,26,2024-03-21 10:58:00.530000,2024-03-21 11:47:22.570000,00:49:22.040000,,,00:00:00,,,00:00:00
 ,,Anomaly detection unsupervised multivariate,exploring phase,13,-,Unsupervised feature selection using chronological fitting with SHAP - 2024 - Quixuan,18,2024-03-21 13:47:20.270000,2024-03-21 14:25:50.310000,00:38:30.040000,,,00:00:00,,,00:00:00
 ,,,exploring phase,14,-,Anomaly detection in multivariate time series of drilling data - 2024 - Altindal,21,2024-03-21 14:32:35.860000,2024-03-21 14:50:21,00:17:45.140000,,,00:00:00,,,00:00:00
 ,,,exploring phase,15,-,Recursive Principal Component Analysis-Based Data Outlier Detection - 2017 - Yu,10,2024-03-21 14:59:27.090000,2024-03-21 15:27:32.430000,00:28:05.340000,,,00:00:00,,,00:00:00
