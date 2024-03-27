@@ -11,6 +11,8 @@ import os
 import numpy as np
 import pandas as pd
 
+import bs4
+
 dirPATH  = os.path.dirname(os.path.realpath(__file__))
 os.chdir(dirPATH)
 
@@ -18,9 +20,8 @@ os.chdir(dirPATH)
 def rangeMax(cell_range:tuple[tuple]):
     return max([[float(cell.value) for cell in row] for row in cell_range])[0]
 
-
-def colorNode(isChosen=False, fact=0.0):
-    colors = [Color("#97C2FC"), Color("#BBFC97"), Color("#FC97C2")]#FCD197
+colors = [Color("#97C2FC"), Color("#BBFC97"), Color("#FC97C2")]#FCD197
+def colorNode(colors, isChosen=False, fact=0.0):
     if isChosen:
         return colors[0].hex
     else:
@@ -51,6 +52,24 @@ def colorNode(isChosen=False, fact=0.0):
         color_res_hsl %= 1
 
         return Color(hsl=color_res_hsl).hex
+
+def gradStyle(colors:list[str]):
+    style = """div.legend {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 50px;
+        height: 250px;
+        background: linear-gradient(to top in hsl"""
+
+    for i, color in enumerate(colors):
+
+        style += f", {color} {int(100*i/(len(colors) - 1))}%"
+        
+
+    style += ")}"
+
+    return style
 
 workbook = load_workbook(filename="Categorie-Methode liste.xlsx", data_only=True)
 sheet = workbook.active
@@ -117,17 +136,24 @@ loss_max = np.max(loss[loss != np.inf])
 loss_min = np.min(loss[loss != np.inf])
 
 for node in nx_graph.nodes :
-    nx_graph.nodes[node]["color"] = colorNode(node in chosen, (loss[node] - loss_min)/(loss_max - loss_min))
+    nx_graph.nodes[node]["color"] = colorNode(colors, node in chosen, (loss[node] - loss_min)/(loss_max - loss_min))
 
 nt = Network('1000px', '100%')
 
+treePath = 'tree.html'
+
 nt.from_nx(nx_graph)
-nt.save_graph('tree.html')
+nt.save_graph(treePath)
 
 
-import bs4
 
 # load the file
-with open("existing_file.html") as inf:
-    txt = inf.read()
-    soup = bs4.BeautifulSoup(txt)
+with open(treePath) as file:
+    txt = file.read()
+    soup = bs4.BeautifulSoup(txt, features="html.parser")
+
+soup.head.style.append(gradStyle(colors))
+soup.body.append(soup.new_tag("div", attrs={"class": "legend"}))
+
+with open(treePath, "w") as file:
+    file.write(str(soup.prettify()))
