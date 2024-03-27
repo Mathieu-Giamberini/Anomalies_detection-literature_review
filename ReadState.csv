@@ -16,28 +16,45 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,
 ,,,,,N,Not relevant,,,,,,,,,,
 ,,,,,NR,Not a review,,,,,,,,,,
-,,,,,Y,"Yes, relevant",,2024-03-27 08:47:23.130000,,,,,,,,
+,,,,,Y,"Yes, relevant",,2024-03-27 09:26:55.240000,,,,,,,,
 ,,,,,-,,,,,,,,,,,
 ,,exploring paper count,18,,,,,1st,,,2nd,,,3rd,,
 ,,Filter,research phase,id,relevant,Title,#pages,Start,end,1-time,Start,end,2-time,Start,end,3-time
 ,,"ReaschGate, Anomaly detection review",exploring phase,1,-,Toward the automation of mechanized tunneling,,2024-03-11 10:30:23,2024-03-11 11:12:22.540000,00:41:59.540000,,,00:00:00,,,00:00:00
-,,,exploring phase,2,NR,Anomaly Detection on Time Serie - 2010 -  Mingyan Teng ,,2024-03-11 14:07:34,2024-03-11 14:46:16.840000,00:38:42.840000,,,00:00:00,,,00:00:00
-,,,exploring phase,3,N,A Review of Time-Series Anomaly Detection Techniques - 2021 - K. Shaukat,,2024-03-11 15:18:03.730000,2024-03-11 15:30:24.010000,00:12:20.280000,,,00:00:00,,,00:00:00
-,,,exploring phase,4,N,Anomaly Detection and Time Series Analysis -2023 - Ayush Anand,,2024-03-11 15:38:26.310000,2024-03-11 15:52:17.120000,00:13:50.810000,2024-03-11 15:24:44,2024-03-11 16:24:46.550000,01:00:02.550000,,,00:00:00
-,,,exploring phase,5,N,Multimedia datasets for anomaly detection: a review - 2023 - Pratibha Kumari,,2024-03-12 13:30:49,2024-03-12 14:06:49,00:36:00,,,00:00:00,,,00:00:00
-,,,exploring phase,6,Y,An Experimental Evaluation of Time Series Classiﬁcation - 2018 - Górecki ,,2024-03-12 14:27:25.240000,2024-03-12 15:31:41.250000,01:04:16.010000,,,00:00:00,,,00:00:00
-,,,exploring phase,7,,An exhaustive comparison of distance measures in the classification of time series with 1NN method - 2024 - Górecki ,,2024-03-12 15:58:49.640000,2024-03-12 16:31:20.580000,00:32:30.940000,,,00:00:00,,,00:00:00
+,,,exploring phase,2,NR,Anomaly Detection on Time Serie - Teng  et al. 2010,,2024-03-11 14:07:34,2024-03-11 14:46:16.840000,00:38:42.840000,,,00:00:00,,,00:00:00
+,,,exploring phase,3,N,A Review of Time-Series Anomaly Detection Techniques - K. Shaukat et al. 2021,,2024-03-11 15:18:03.730000,2024-03-11 15:30:24.010000,00:12:20.280000,,,00:00:00,,,00:00:00
+,,,exploring phase,4,N,Anomaly Detection and Time Series Analysis - Anand et al. 2023,,2024-03-11 15:38:26.310000,2024-03-11 15:52:17.120000,00:13:50.810000,2024-03-11 15:24:44,2024-03-11 16:24:46.550000,01:00:02.550000,,,00:00:00
+,,,exploring phase,5,N,Multimedia datasets for anomaly detection: a review -  Kumari et al 2023,,2024-03-12 13:30:49,2024-03-12 14:06:49,00:36:00,,,00:00:00,,,00:00:00
+,,,exploring phase,6,Y,An Experimental Evaluation of Time Series Classiﬁcation - Górecki et al. 2018,,2024-03-12 14:27:25.240000,2024-03-12 15:31:41.250000,01:04:16.010000,,,00:00:00,,,00:00:00
+,,,exploring phase,7,,An exhaustive comparison of distance measures in the classification of time series with 1NN method - Górecki et al. 2024,,2024-03-12 15:58:49.640000,2024-03-12 16:31:20.580000,00:32:30.940000,,,00:00:00,,,00:00:00
 ,,,exploring phase,8,Y,A SURVEY OF RESEARCH ON ANOMALY DETECTION FOR TIME SERIES  - 2016 - U-SHENG WU ,6,2024-03-14 10:42:43.610000,2024-03-14 10:50:51.890000,00:08:08.280000,,,00:00:00,,,00:00:00
-,,,exploring phase,9,Y,Deep Learning for Anomaly Detection in Time-Series Data - 2021 - Choi ,23,2024-03-14 11:00:55.800000,2024-03-14 11:47:52.170000,00:46:56.370000,done,,,,,00:00:00
-,,,exploring phase,10,Y,An Experimental Evaluation of Anomaly Detection in Time - 2023 - Zhang,14,2024-03-14 13:42:33.380000,2024-03-14 14:02:55.740000,00:20:22.360000,,,00:00:00,,,00:00:00
-,,,DAGMM,11,-,DEEP AUTOENCODING GAUSSIAN MIXTURE MODEL FOR UNSUPERVISED ANOMALY DETECTION - 2018 - Zong,19,2024-03-21 09:52:40.680000,2024-03-21 10:30:38.810000,00:37:58.130000,2024-03-26 12:06:29,2024-03-26 13:59:54.790000,01:53:25.790000,,,00:00:00
-,,,DAGMM,12,-,Pyramid reconstruction assisted deep autoencoding Gaussian mixture model for industrial fault detection - 2023 - Tian,26,2024-03-21 10:58:00.530000,2024-03-21 11:47:22.570000,00:49:22.040000,,,00:00:00,,,00:00:00
-,,Anomaly detection unsupervised multivariate,exploring phase,13,-,Unsupervised feature selection using chronological fitting with SHAP - 2024 - Quixuan,18,2024-03-21 13:47:20.270000,2024-03-21 14:25:50.310000,00:38:30.040000,,,00:00:00,,,00:00:00
-,,,exploring phase,14,-,Anomaly detection in multivariate time series of drilling data - 2024 - Altindal,21,2024-03-21 14:32:35.860000,2024-03-21 14:50:21,00:17:45.140000,,,00:00:00,,,00:00:00
-,,,exploring phase,15,-,Recursive Principal Component Analysis-Based Data Outlier Detection - 2017 - Yu,10,2024-03-21 14:59:27.090000,2024-03-21 15:27:32.430000,00:28:05.340000,,,00:00:00,,,00:00:00
-,,"sciencedirect, ""anomaly detection"" ""unsupervised"", review, 2010-2022",exploring phase,16,Y,A survey on anomaly detection for technical systems using LSTM networks - 2021 - Lindemann,11,2024-03-25 08:11:57,2024-03-25 08:21:57,00:10:00,,,00:00:00,,,00:00:00
-,,,exploring phase,17,N,Autoencoders for unsupervised anomaly segmentation in brain MR images: A comparative study - 2021 - Baur,16,2024-03-25 08:36:12.150000,2024-03-25 08:39:22.710000,00:03:10.560000,,,00:00:00,,,00:00:00
+,,,exploring phase,9,Y,Deep Learning for Anomaly Detection in Time-Series Data - Choi et al. 2021,23,2024-03-14 11:00:55.800000,2024-03-14 11:47:52.170000,00:46:56.370000,done,,,,,00:00:00
+,,,exploring phase,10,Y,An Experimental Evaluation of Anomaly Detection in Time -  Zhang et al. 2023,14,2024-03-14 13:42:33.380000,2024-03-14 14:02:55.740000,00:20:22.360000,,,00:00:00,,,00:00:00
+,,,DAGMM,11,-,DEEP AUTOENCODING GAUSSIAN MIXTURE MODEL FOR UNSUPERVISED ANOMALY DETECTION - Zong et al. 2018,19,2024-03-21 09:52:40.680000,2024-03-21 10:30:38.810000,00:37:58.130000,2024-03-26 12:06:29,2024-03-26 13:59:54.790000,01:53:25.790000,,,00:00:00
+,,,DAGMM,12,-,Pyramid reconstruction assisted deep autoencoding Gaussian mixture model for industrial fault detection - Tian et al. 2023,26,2024-03-21 10:58:00.530000,2024-03-21 11:47:22.570000,00:49:22.040000,,,00:00:00,,,00:00:00
+,,Anomaly detection unsupervised multivariate,exploring phase,13,-,Unsupervised feature selection using chronological fitting with SHAP - Quixuan et al. 2024,18,2024-03-21 13:47:20.270000,2024-03-21 14:25:50.310000,00:38:30.040000,,,00:00:00,,,00:00:00
+,,,exploring phase,14,-,Anomaly detection in multivariate time series of drilling data - Altindal et al. 2024,21,2024-03-21 14:32:35.860000,2024-03-21 14:50:21,00:17:45.140000,,,00:00:00,,,00:00:00
+,,,exploring phase,15,-,Recursive Principal Component Analysis-Based Data Outlier Detection -  Yu et al. 2017,10,2024-03-21 14:59:27.090000,2024-03-21 15:27:32.430000,00:28:05.340000,,,00:00:00,,,00:00:00
+,,"sciencedirect, ""anomaly detection"" ""unsupervised"", review, 2010-2022",exploring phase,16,Y,A survey on anomaly detection for technical systems using LSTM networks - Lindemann et al. 2021,11,2024-03-25 08:11:57,2024-03-25 08:21:57,00:10:00,,,00:00:00,,,00:00:00
+,,,exploring phase,17,N,Autoencoders for unsupervised anomaly segmentation in brain MR images: A comparative study - Baur et .al 2021,16,2024-03-25 08:36:12.150000,2024-03-25 08:39:22.710000,00:03:10.560000,,,00:00:00,,,00:00:00
 ,,,exploring phase,18,NR,A deep hypersphere approach to high-dimensional anomaly detection - 2022 - Zheng ,17,2024-03-25 08:40:25.720000,2024-03-25 08:49:45.440000,00:09:19.720000,,,00:00:00,,,00:00:00
-,,,exploring phase,19,N,Real-time big data processing for anomaly detection: A Survey - Ahamed - 2019,19,2024-03-25 09:02:50.010000,2024-03-25 09:08:30.040000,00:05:40.030000,,,00:00:00,,,00:00:00
-,,,exploring phase,20,N,A deep encoder-decoder network for anomaly detection - 2022 - Yu,16,2024-03-25 09:25:28.210000,2024-03-25 09:29:27.730000,00:03:59.520000,,,00:00:00,,,00:00:00
-,,,TCN,21,-,An Empirical Evaluation of Generic Convolutional and Recurrent Networks - Bai 2018,14,2024-03-27 08:29:08.190000,2024-03-27 08:38:31.670000,00:09:23.480000,,,00:00:00,,,00:00:00
+,,,exploring phase,19,N,Real-time big data processing for anomaly detection: A Survey  - 2019 Ahamed et al.,19,2024-03-25 09:02:50.010000,2024-03-25 09:08:30.040000,00:05:40.030000,,,00:00:00,,,00:00:00
+,,,exploring phase,20,N,A deep encoder-decoder network for anomaly detection -  Yu et al. 2022,16,2024-03-25 09:25:28.210000,2024-03-25 09:29:27.730000,00:03:59.520000,,,00:00:00,,,00:00:00
+,,,TCN,21,-,An Empirical Evaluation of Generic Convolutional and Recurrent Networks - Bai  et al.  2018 ,14,2024-03-27 08:29:08.190000,2024-03-27 08:38:31.670000,00:09:23.480000,,,00:00:00,,,00:00:00
+,,,TCN,22,-,A Comparison of TCN and LSTM Models in Detecting Anomalies in Time Series Data - Gopali et al.  2021,6,2024-03-27 09:08:04.050000,2024-03-27 09:23:22,00:15:17.950000,,,00:00:00,,,00:00:00
+,,,,23,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,24,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,25,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,26,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,27,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,28,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,29,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,30,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,31,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,32,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,33,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,34,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,35,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,36,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,37,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,,38,,,,,,00:00:00,,,00:00:00,,,00:00:00
