@@ -125,7 +125,7 @@ Zong et al. 2018"
 ,,,,,,115,Log-linear mixture ,LogLM,GMM,3,0,,,,,Yes,,Approximate GMM (Zong et al. 2018),,,
 ,,,,,,116,Correlation of sensor value with efficiency variation,,,0,0,,,,,,,,,,Mathieu
 ,,,,,,117,,TCN-AE,TCN,4,0,,,,,,,,,,Thill et al. 2021
-,,,,,,118,,,,0,0,,,,,,,,,,
+,,,,,,118,,Core loss,,0,0,,,,,,,,,,
 ,,,,,,119,,,,0,0,,,,,,,,,,
 ,,,,,,120,,,,0,0,,,,,,,,,,
 ,,,,,,121,,,,0,0,,,,,,,,,,
