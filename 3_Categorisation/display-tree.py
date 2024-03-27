@@ -20,6 +20,17 @@ os.chdir(dirPATH)
 def rangeMax(cell_range:tuple[tuple]):
     return max([[float(cell.value) for cell in row] for row in cell_range])[0]
 
+
+def getLoss(graph: nx.Graph, chosen:list[int], lmbd:float=1.0):
+    distance = nx.all_pairs_shortest_path_length(graph)
+    distance = pd.DataFrame.from_dict(dict(distance))
+
+    chosenPush = np.sum(1/distance[chosen], axis=1)
+    rootPull = distance.iloc[0]
+
+    return chosenPush + lmbd*rootPull
+
+
 colors = [Color("#97C2FC"), Color("#BBFC97"), Color("#FC97C2")]#FCD197
 def colorNode(colors, isChosen=False, fact=0.0):
     if isChosen:
@@ -121,14 +132,6 @@ for parent in children.keys():
             nx_graph.add_edge(index[parent], i_child, weight=max_depth - depth)
 
 
-def getLoss(graph: nx.Graph, chosen:list[int], lmbd:float=1.0):
-    distance = nx.all_pairs_shortest_path_length(graph)
-    distance = pd.DataFrame.from_dict(dict(distance))
-
-    chosenPush = np.sum(1/distance[chosen], axis=1)
-    rootPull = distance.iloc[0]
-
-    return chosenPush + lmbd*rootPull
 
 
 loss = getLoss(nx_graph, chosen,0.5)

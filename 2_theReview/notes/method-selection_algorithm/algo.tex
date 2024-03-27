@@ -42,8 +42,9 @@
         \[M_i = \{\argmin_{n \in T} \; L(M_{i-1}, \,n)\} \cup M_{i-1}\]     
         
     \section{Loss function}
-        Here could be a good example of loss function :
+        Here are some examples of loss functions :
         \[(M, \,n) \mapsto \sum_{m \in \,M \cup \{\text{AD}\}} \cfrac{1}{\delta(n, t)^2} + \lambda \log(\delta(n, \text{AD}) + 1)\]
+        \[(M, \,n) \mapsto \sum_{m \in \,M \cup \{\text{AD}\}} \cfrac{1}{\delta(n, t)} + \lambda \,\delta(n, \text{AD}) \]
         Where $\delta$ is the distance between to node in the tree, AD the root method (Anomaly detection) and $\lambda$ a parameter. 
 
 \end{document}
