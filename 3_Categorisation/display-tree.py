@@ -35,6 +35,7 @@ colors = [Color("#97C2FC"), Color("#BBFC97"), Color("#FC97C2")]#FCD197
 def colorNode(colors, isChosen=False, fact=0.0):
     if isChosen:
         return colors[0].hex
+    
     else:
         n = len(colors) - 1
 
@@ -103,7 +104,9 @@ while run:
     id       = sheet[f"G{i}"].value
     depth = float(sheet[f"K{i}"].value)
 
-    if sheet[f"P{i}"].value == "x" or name == "AD":
+    isChosen = sheet[f"P{i}"].value == "x"
+
+    if isChosen or name == "AD":
         chosen.append(i)
 
     run = not (name is None and parent is None)
@@ -119,7 +122,7 @@ while run:
             children[parent_name] = [i]
 
         if parent is not None or name == "AD":
-            nx_graph.add_node(i, title=fullName, label=str(name))
+            nx_graph.add_node(i, title=fullName, label=str(name), shape= "triangle" if isChosen else "dot" )
         i += 1
 
 
