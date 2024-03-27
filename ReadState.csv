@@ -16,7 +16,7 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,
 ,,,,,N,Not relevant,,,,,,,,,,
 ,,,,,NR,Not a review,,,,,,,,,,
-,,,,,Y,"Yes, relevant",,2024-03-27 15:48:19.370000,,,,,,,,
+,,,,,Y,"Yes, relevant",,2024-03-27 16:36:10.180000,,,,,,,,
 ,,,,,-,,,,,,,,,,,
 ,,exploring paper count,18,,,,,1st,,,2nd,,,3rd,,
 ,,Filter,research phase,id,relevant,Title,#pages,Start,end,1-time,Start,end,2-time,Start,end,3-time
@@ -44,8 +44,8 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,TCN,22,-,A Comparison of TCN and LSTM Models in Detecting Anomalies in Time Series Data - Gopali et al.  2021,6,2024-03-27 09:08:04.050000,2024-03-27 09:23:22,00:15:17.950000,,,00:00:00,,,00:00:00
 ,,,,23,-,Core loss: Mining core samples efficiently for robust machine anomaly detection against data pollution - Shang et al. 2023,17,2024-03-27 09:50:52.950000,2024-03-27 10:12:28.350000,00:21:35.400000,,,00:00:00,,,00:00:00
 ,,Anomaly detection unsupervised with contamination,Bulk,24,Y,Latent Outlier Exposure for Anomaly Detection with Contaminated Data - Qiu et al. 2022,15,2024-03-27 15:29:47.250000,2024-03-27 15:47:51.160000,00:18:03.910000,,,00:00:00,,,00:00:00
-,,,Bulk,25,,,,,,00:00:00,,,00:00:00,,,00:00:00
-,,,Bulk,26,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,Bulk,25,Y,An Iterative Method for Unsupervised Robust Anomaly Detection under Data Contamination - Kim et al. 2021,13,2024-03-27 15:59:33.620000,2024-03-27 16:21:44.620000,00:22:11,,,00:00:00,,,00:00:00
+,,,Bulk,26,N,Deep Unsupervised Anomaly Detection - Li et al. 2021,10,2024-03-27 16:28:15,2024-03-27 16:34:17.960000,00:06:02.960000,,,00:00:00,,,00:00:00
 ,,,Bulk,27,,,,,,00:00:00,,,00:00:00,,,00:00:00
 ,,,Bulk,28,,,,,,00:00:00,,,00:00:00,,,00:00:00
 ,,,Bulk,29,,,,,,00:00:00,,,00:00:00,,,00:00:00
