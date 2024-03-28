@@ -16,7 +16,7 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,
 ,,,,,N,Not relevant,,,,,,,,,,
 ,,,,,NR,Not a review,,,,,,,,,,
-,,,,,Y,"Yes, relevant",,2024-03-27 16:36:10.180000,,,,,,,,
+,,,,,Y,"Yes, relevant",,2024-03-28 08:33:18.790000,,,,,,,,
 ,,,,,-,,,,,,,,,,,
 ,,exploring paper count,18,,,,,1st,,,2nd,,,3rd,,
 ,,Filter,research phase,id,relevant,Title,#pages,Start,end,1-time,Start,end,2-time,Start,end,3-time
@@ -46,8 +46,8 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,Anomaly detection unsupervised with contamination,Bulk,24,Y,Latent Outlier Exposure for Anomaly Detection with Contaminated Data - Qiu et al. 2022,15,2024-03-27 15:29:47.250000,2024-03-27 15:47:51.160000,00:18:03.910000,,,00:00:00,,,00:00:00
 ,,,Bulk,25,Y,An Iterative Method for Unsupervised Robust Anomaly Detection under Data Contamination - Kim et al. 2021,13,2024-03-27 15:59:33.620000,2024-03-27 16:21:44.620000,00:22:11,,,00:00:00,,,00:00:00
 ,,,Bulk,26,N,Deep Unsupervised Anomaly Detection - Li et al. 2021,10,2024-03-27 16:28:15,2024-03-27 16:34:17.960000,00:06:02.960000,,,00:00:00,,,00:00:00
-,,,Bulk,27,,,,,,00:00:00,,,00:00:00,,,00:00:00
-,,,Bulk,28,,,,,,00:00:00,,,00:00:00,,,00:00:00
+,,,Bulk,27,Y,Exploiting negative correlation for unsupervised anomaly detection in contaminated time series - Lin et al. 2024 ,11,2024-03-28 08:02:28.160000,2024-03-28 08:32:14.470000,00:29:46.310000,,,00:00:00,,,00:00:00
+,,,Bulk,28,,Unsupervised Time Series Anomaly Detection under Data Contamination - Xiaoguhi et al. 2022,,,,00:00:00,,,00:00:00,,,00:00:00
 ,,,Bulk,29,,,,,,00:00:00,,,00:00:00,,,00:00:00
 ,,,,30,,,,,,00:00:00,,,00:00:00,,,00:00:00
 ,,,,31,,,,,,00:00:00,,,00:00:00,,,00:00:00

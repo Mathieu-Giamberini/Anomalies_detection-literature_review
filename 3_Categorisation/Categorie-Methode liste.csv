@@ -5,9 +5,9 @@ Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unn
 ,,,,,,,,,,,,,,,,,,for contamination,,,,
 ,,,,,,,,,,,,,,,,Cara,,,,,,
 ,,,,,,Id,Categories/Method,Abbreviation,Parent,Depth,Children,Children_,Understanding,Interest,Chosen,Supervise,variate ,resilience,General approach ,Advantages,Draw back,Source
-,,,,,,1,Anomaly detection,AD,,0,110,110,,,,,,,Detect anomaly in time series,,,
+,,,,,,1,Anomaly detection,AD,,0,112,112,,,,,,,Detect anomaly in time series,,,
 ,,,,,,5,Predictive model,Predictive,AD,1,67,67,,,,,,,,,,Choi et al. 2021
-,,,,,,3,Clustering-based methods ,Cluster,AD,1,24,24,,,,,,,,,,Choi et al. 2021
+,,,,,,3,Clustering-based methods ,Cluster,AD,1,25,25,,,,,,,,,,Choi et al. 2021
 ,,,,,,68,Dimensional reduction,Dim reduc,Predictive,2,21,21,,4,,,,,,,,[] Choi et al. 2021
 ,,,,,,13,Autoencoder ,AE,Dim reduc,3,16,16,,,,Un,Multi,,"Take the data, go throw the AE if the loss function is high, Anomaly",,,Choi et al. 2021
 ,,,,,,2,Classical methods ,Classical,AD,1,10,10,,,,,,,,,,Choi et al. 2021
@@ -125,12 +125,12 @@ Zong et al. 2018"
 ,,,,,,115,Log-linear mixture ,LogLM,GMM,3,0,,,,,Yes,,,Approximate GMM (Zong et al. 2018),,,
 ,,,,,,116,Correlation of sensor value with efficiency variation,,,0,0,,,,,,,,,,,Mathieu
 ,,,,,,117,,TCN-AE,TCN,4,0,,,,,,,,,,,Thill et al. 2021
-,,,,,,118,Core loss,Core loss,Contamination,3,0,,,,,,,,,,,
-,,,,,,119,Latent Outlier Exposure ,LOE,Contamination,3,0,,,,,Un,,0.3,,,,
-,,,,,,120,Methode to addapt existimg techniaque to solve specific problem,add-on,AD,1,3,3,,,,,,,,,,
-,,,,,,121,Deal with contamiated training data for UAD,Contamination,add-on,2,2,2,,,,,,,,,,
-,,,,,,122,,,,0,0,,,,,,,,,,,
-,,,,,,123,,,,0,0,,,,,,,,,,,
+,,,,,,118,Core loss,Core loss,Contamination,3,0,,,,,,,,,,,Shang et al. 2023
+,,,,,,119,Latent Outlier Exposure ,LOE,Contamination,3,0,,,,,Un,,0.3,,,,Qiu et al. 2022
+,,,,,,120,Methode to addapt existimg techniaque to solve specific problem,add-on,AD,1,4,4,,,,,,,,,,
+,,,,,,121,Deal with contamiated training data for UAD,Contamination,add-on,2,3,3,,,x,,,,,,,
+,,,,,,122,Iterative Anomaly Detection,IAD ,Contamination,3,0,,,,,Un,,0.3,"Add weight to the loss function to correct for contamination, update the weight iteratively",,,
+,,,,,,123,Negative correlation ,NegCo,Cluster,2,0,,,,,Un,Uni,0.268,AE with Gaussian representation of the latent space and a double decoder one with all data and the other only with ones from the centre,,,
 ,,,,,,124,,,,0,0,,,,,,,,,,,
 ,,,,,,125,,,,0,0,,,,,,,,,,,
 ,,,,,,126,,,,0,0,,,,,,,,,,,
