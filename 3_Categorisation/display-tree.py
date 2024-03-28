@@ -18,7 +18,7 @@ os.chdir(dirPATH)
 
 
 def rangeMax(cell_range:tuple[tuple]):
-    return max([[float(cell.value) for cell in row] for row in cell_range])[0]
+    return max([[float(cell.value if cell.value is not None else 0.0) for cell in row] for row in cell_range])[0]
 
 
 def getLoss(graph: nx.Graph, chosen:list[int], lmbd:float=1.0):
