@@ -1,5 +1,3 @@
-from dash import Dash, html
-import dash_cytoscape as cyto
 from openpyxl import load_workbook
 
 import pyvis
