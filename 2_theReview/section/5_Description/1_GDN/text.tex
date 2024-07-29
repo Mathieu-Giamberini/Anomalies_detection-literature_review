@@ -1,0 +1,47 @@
+\documentclass[../description.tex]{subfiles}
+
+\begin{document}
+    When using "distance to prediction" for AD in a multivariate settings, it's 
+    sensible to assume that related sensors have redundant information 
+    (e.g. a pressure and a extension sensors for a hydraulic cylinder).
+    So if there measurement was put together to predict the next ones 
+    it could improve their prediction and so reduce the detection threshold. This is a base idea of the GDN architecture in ~\cite{Deng2021gdn}.
+    Mark the related sensor in a directed Graph
+    and apply an attention layer on the past measurement 
+    of the neighborhoods to predict the next ones.
+    Here is some short assertion and nice propriety of this approach :
+    \begin{itemize}
+        \item Even if every sensor of the TBM are in the graph, the AD is still localize to each sensor.
+        \item The training data is assume to be free of anomaly.
+        \item Prior knowledge of relation between sensor can be embedded in the graph by restricted some relationship. 
+        This can lower the complexity and the time of training.
+    \end{itemize}
+
+    To test their method the authors used dataset of simulated attack on water treatment physical test-bed systems, 
+    the Secure Water Treatment (SWaT) and Water Distribution (WADI) dataset. As a base line they use other method which we discus in other Section.
+    
+    \begin{table}[t]
+        \centering\fontsize{9}{11}\selectfont
+        % \resizebox{\textwidth}{!}{
+        \begin{tabular}{rrrrrrr}
+            \toprule
+              & \multicolumn{3}{c}{\textbf{\texttt{SWaT}}} & \multicolumn{3}{c}{\textbf{\texttt{WADI}}} \\
+             \cmidrule(r){2-4} \cmidrule(r){5-7}
+             \textbf{Method} & $\mathbf{\mathsf{Prec}}$ & $\mathbf{\mathsf{Rec}}$ & $\mathbf{\mathsf{F1}}$ & $\mathbf{\mathsf{Prec}}$ & $\mathbf{\mathsf{Rec}}$ & $\mathbf{\mathsf{F1}}$ \\
+             \midrule
+             \textsc{PCA} & 24.92 & 21.63 & 0.23 & 39.53 & 5.63 & 0.10 \\
+             \textsc{KNN} & 7.83 & 7.83 & 0.08 & 7.76 & 7.75 & 0.08 \\
+             \textsc{FB}  & 10.17 & 10.17 & 0.10 & 8.60 & 8.60 & 0.09 \\
+             \textsc{AE} & 72.63 & 52.63 & 0.61 & 34.35 & 34.35 & 0.34 \\
+             \textsc{\footnotesize{DAGMM}} & 27.46 & 69.52 & 0.39 & 54.44 & 26.99 & 0.36 \\
+             \textsc{\footnotesize{LSTM-VAE}} & 96.24 & 59.91 & 0.74 & 87.79 & 14.45 & 0.25 \\
+             \textsc{\footnotesize{MAD-GAN}} & 98.97 & 63.74 & 0.77 & 41.44 & 33.92 & 0.37 \\
+             \midrule
+             \textsc{GDN} & \textbf{99.35} & \textbf{68.12} & \textbf{0.81} &\textbf{97.50} & \textbf{40.19} & \textbf{0.57} \\
+             \bottomrule
+        \end{tabular}%}
+        \caption{Anomaly detection accuracy in terms of precision(\%), recall(\%), and F1-score, on two datasets with ground-truth labelled anomalies. Part of the results are from ~\cite{li2019mad}.}
+        \label{tab:performance}
+    \end{table}
+    
+\end{document}

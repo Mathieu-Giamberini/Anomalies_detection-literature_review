@@ -1,0 +1,258 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aggarwal(2015)}]{autoencoding}
+Aggarwal, C.~C. 2015.
+\newblock Outlier analysis.
+\newblock In \emph{Data mining}, 237--263. Springer.
+
+\bibitem[{Ahmed, Palleti, and Mathur(2017)}]{dataset_wadi}
+Ahmed, C.~M.; Palleti, V.~R.; and Mathur, A.~P. 2017.
+\newblock WADI: a water distribution testbed for research in the design of
+  secure cyber physical systems.
+\newblock In \emph{Proceedings of the 3rd International Workshop on
+  Cyber-Physical Systems for Smart Water Networks}, 25--28.
+
+\bibitem[{Angiulli and Pizzuti(2002)}]{knn}
+Angiulli, F.; and Pizzuti, C. 2002.
+\newblock Fast outlier detection in high dimensional spaces.
+\newblock In \emph{European conference on principles of data mining and
+  knowledge discovery}, 15--27. Springer.
+
+\bibitem[{Bach and Jordan(2004)}]{pgm_1}
+Bach, F.~R.; and Jordan, M.~I. 2004.
+\newblock Learning graphical models for stationary time series.
+\newblock \emph{IEEE transactions on signal processing} 52(8): 2189--2199.
+
+\bibitem[{Bl{\'a}zquez-Garc{\'\i}a et~al.(2020)Bl{\'a}zquez-Garc{\'\i}a, Conde,
+  Mori, and Lozano}]{survey_timeseries}
+Bl{\'a}zquez-Garc{\'\i}a, A.; Conde, A.; Mori, U.; and Lozano, J.~A. 2020.
+\newblock A review on outlier/anomaly detection in time series data.
+\newblock \emph{arXiv preprint arXiv:2002.04236} .
+
+\bibitem[{Breunig et~al.(2000)Breunig, Kriegel, Ng, and
+  Sander}]{breunig2000lof}
+Breunig, M.~M.; Kriegel, H.-P.; Ng, R.~T.; and Sander, J. 2000.
+\newblock LOF: identifying density-based local outliers.
+\newblock In \emph{Proceedings of the 2000 ACM SIGMOD international conference
+  on Management of data}, 93--104.
+
+\bibitem[{Chen et~al.(2019)Chen, Chen, Xie, Cao, Gao, and Feng}]{traffic_1}
+Chen, W.; Chen, L.; Xie, Y.; Cao, W.; Gao, Y.; and Feng, X. 2019.
+\newblock Multi-range attentive bicomponent graph convolutional network for
+  traffic forecasting.
+\newblock \emph{arXiv preprint arXiv:1911.12093} .
+
+\bibitem[{Defferrard, Bresson, and Vandergheynst(2016)}]{gcnn}
+Defferrard, M.; Bresson, X.; and Vandergheynst, P. 2016.
+\newblock Convolutional neural networks on graphs with fast localized spectral
+  filtering.
+\newblock In \emph{Advances in neural information processing systems},
+  3844--3852.
+
+\bibitem[{Fey and Lenssen(2019)}]{Fey/Lenssen/2019}
+Fey, M.; and Lenssen, J.~E. 2019.
+\newblock Fast Graph Representation Learning with {PyTorch Geometric}.
+\newblock In \emph{ICLR Workshop on Representation Learning on Graphs and
+  Manifolds}.
+
+\bibitem[{Filonov, Lavrentyev, and Vorontsov(2016)}]{lstm_1}
+Filonov, P.; Lavrentyev, A.; and Vorontsov, A. 2016.
+\newblock Multivariate industrial time series with cyber-attack simulation:
+  Fault detection using an lstm-based predictive data model.
+\newblock \emph{arXiv preprint arXiv:1612.06676} .
+
+\bibitem[{Goh et~al.(2016)Goh, Adepu, Junejo, and Mathur}]{goh2016dataset}
+Goh, J.; Adepu, S.; Junejo, K.~N.; and Mathur, A. 2016.
+\newblock A dataset to support research in the design of secure water treatment
+  systems.
+\newblock In \emph{International conference on critical information
+  infrastructures security}, 88--99. Springer.
+
+\bibitem[{Hautamaki, Karkkainen, and Franti(2004)}]{hautamaki2004outlier}
+Hautamaki, V.; Karkkainen, I.; and Franti, P. 2004.
+\newblock Outlier detection using k-nearest neighbour graph.
+\newblock In \emph{Proceedings of the 17th International Conference on Pattern
+  Recognition, 2004. ICPR 2004.}, volume~3, 430--433. IEEE.
+
+\bibitem[{Hundman et~al.(2018{\natexlab{a}})Hundman, Constantinou, Laporte,
+  Colwell, and Soderstrom}]{lstm_2}
+Hundman, K.; Constantinou, V.; Laporte, C.; Colwell, I.; and Soderstrom, T.
+  2018{\natexlab{a}}.
+\newblock Detecting spacecraft anomalies using lstms and nonparametric dynamic
+  thresholding.
+\newblock In \emph{Proceedings of the 24th ACM SIGKDD international conference
+  on knowledge discovery \& data mining}, 387--395.
+
+\bibitem[{Hundman et~al.(2018{\natexlab{b}})Hundman, Constantinou, Laporte,
+  Colwell, and Soderstrom}]{hundman2018detecting}
+Hundman, K.; Constantinou, V.; Laporte, C.; Colwell, I.; and Soderstrom, T.
+  2018{\natexlab{b}}.
+\newblock Detecting spacecraft anomalies using lstms and nonparametric dynamic
+  thresholding.
+\newblock In \emph{Proceedings of the 24th ACM SIGKDD international conference
+  on knowledge discovery \& data mining}, 387--395.
+
+\bibitem[{Kingma and Welling(2013)}]{vae}
+Kingma, D.~P.; and Welling, M. 2013.
+\newblock Auto-encoding variational bayes.
+\newblock \emph{arXiv preprint arXiv:1312.6114} .
+
+\bibitem[{Kipf and Welling(2016)}]{gcn}
+Kipf, T.~N.; and Welling, M. 2016.
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock \emph{arXiv preprint arXiv:1609.02907} .
+
+\bibitem[{Kobourov(2012)}]{kobourov2012spring}
+Kobourov, S.~G. 2012.
+\newblock Spring embedders and force directed graph drawing algorithms.
+\newblock \emph{arXiv preprint arXiv:1201.3011} .
+
+\bibitem[{Lazarevic and Kumar(2005)}]{featurebagging}
+Lazarevic, A.; and Kumar, V. 2005.
+\newblock Feature bagging for outlier detection.
+\newblock In \emph{Proceedings of the eleventh ACM SIGKDD international
+  conference on Knowledge discovery in data mining}, 157--166.
+
+\bibitem[{Li et~al.(2019)Li, Chen, Jin, Shi, Goh, and Ng}]{li2019mad}
+Li, D.; Chen, D.; Jin, B.; Shi, L.; Goh, J.; and Ng, S.-K. 2019.
+\newblock MAD-GAN: Multivariate anomaly detection for time series data with
+  generative adversarial networks.
+\newblock In \emph{International Conference on Artificial Neural Networks},
+  703--716. Springer.
+
+\bibitem[{Lim et~al.(2020)Lim, Hooi, Ng, Wang, Goh, Weng, and
+  Varadarajan}]{lim2020stp}
+Lim, N.; Hooi, B.; Ng, S.-K.; Wang, X.; Goh, Y.~L.; Weng, R.; and Varadarajan,
+  J. 2020.
+\newblock STP-UDGAT: Spatial-Temporal-Preference User Dimensional Graph
+  Attention Network for Next POI Recommendation.
+\newblock In \emph{Proceedings of the 29th ACM International Conference on
+  Information \& Knowledge Management}, 845--854.
+
+\bibitem[{Maaten and Hinton(2008)}]{tsne}
+Maaten, L. v.~d.; and Hinton, G. 2008.
+\newblock Visualizing data using t-SNE.
+\newblock \emph{Journal of machine learning research} 9(Nov): 2579--2605.
+
+\bibitem[{Mathur and Tippenhauer(2016)}]{dataset_swat}
+Mathur, A.~P.; and Tippenhauer, N.~O. 2016.
+\newblock SWaT: a water treatment testbed for research and training on ICS
+  security.
+\newblock In \emph{2016 International Workshop on Cyber-physical Systems for
+  Smart Water Networks (CySWater)}, 31--36. IEEE.
+
+\bibitem[{Munir et~al.(2018)Munir, Siddiqui, Dengel, and Ahmed}]{cnn_deepant}
+Munir, M.; Siddiqui, S.~A.; Dengel, A.; and Ahmed, S. 2018.
+\newblock DeepAnT: A deep learning approach for unsupervised anomaly detection
+  in time series.
+\newblock \emph{IEEE Access} 7: 1991--2005.
+
+\bibitem[{Park, Hoshi, and Kemp(2018)}]{lstmvae}
+Park, D.; Hoshi, Y.; and Kemp, C.~C. 2018.
+\newblock A multimodal anomaly detector for robot-assisted feeding using an
+  lstm-based variational autoencoder.
+\newblock \emph{IEEE Robotics and Automation Letters} 3(3): 1544--1551.
+
+\bibitem[{Paszke et~al.(2017)Paszke, Gross, Chintala, Chanan, Yang, DeVito,
+  Lin, Desmaison, Antiga, and Lerer}]{paszke2017automatic}
+Paszke, A.; Gross, S.; Chintala, S.; Chanan, G.; Yang, E.; DeVito, Z.; Lin, Z.;
+  Desmaison, A.; Antiga, L.; and Lerer, A. 2017.
+\newblock Automatic differentiation in PyTorch.
+\newblock In \emph{NIPS-W}.
+
+\bibitem[{Qin et~al.(2017)Qin, Song, Chen, Cheng, Jiang, and
+  Cottrell}]{lstmencoder}
+Qin, Y.; Song, D.; Chen, H.; Cheng, W.; Jiang, G.; and Cottrell, G. 2017.
+\newblock A dual-stage attention-based recurrent neural network for time series
+  prediction.
+\newblock \emph{arXiv preprint arXiv:1704.02971} .
+
+\bibitem[{Schlichtkrull et~al.(2018)Schlichtkrull, Kipf, Bloem, Van Den~Berg,
+  Titov, and Welling}]{relationalgcn}
+Schlichtkrull, M.; Kipf, T.~N.; Bloem, P.; Van Den~Berg, R.; Titov, I.; and
+  Welling, M. 2018.
+\newblock Modeling relational data with graph convolutional networks.
+\newblock In \emph{European Semantic Web Conference}, 593--607. Springer.
+
+\bibitem[{Sch{\"o}lkopf et~al.(2001)Sch{\"o}lkopf, Platt, Shawe-Taylor, Smola,
+  and Williamson}]{oneclasssvm}
+Sch{\"o}lkopf, B.; Platt, J.~C.; Shawe-Taylor, J.; Smola, A.~J.; and
+  Williamson, R.~C. 2001.
+\newblock Estimating the support of a high-dimensional distribution.
+\newblock \emph{Neural computation} 13(7): 1443--1471.
+
+\bibitem[{Shyu et~al.(2003)Shyu, Chen, Sarinnapakorn, and Chang}]{pca}
+Shyu, M.-L.; Chen, S.-C.; Sarinnapakorn, K.; and Chang, L. 2003.
+\newblock A novel anomaly detection scheme based on principal component
+  classifier.
+\newblock Technical report, MIAMI UNIV CORAL GABLES FL DEPT OF ELECTRICAL AND
+  COMPUTER ENGINEERING.
+
+\bibitem[{Siffer et~al.(2017)Siffer, Fouque, Termier, and
+  Largouet}]{siffer2017anomaly}
+Siffer, A.; Fouque, P.-A.; Termier, A.; and Largouet, C. 2017.
+\newblock Anomaly detection in streams with extreme value theory.
+\newblock In \emph{Proceedings of the 23rd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, 1067--1075.
+
+\bibitem[{Tank, Foti, and Fox(2015)}]{pgm_2}
+Tank, A.; Foti, N.; and Fox, E. 2015.
+\newblock Bayesian structure learning for stationary time series.
+\newblock \emph{arXiv preprint arXiv:1505.03131} .
+
+\bibitem[{Veli{\v{c}}kovi{\'c} et~al.(2017)Veli{\v{c}}kovi{\'c}, Cucurull,
+  Casanova, Romero, Lio, and Bengio}]{gat}
+Veli{\v{c}}kovi{\'c}, P.; Cucurull, G.; Casanova, A.; Romero, A.; Lio, P.; and
+  Bengio, Y. 2017.
+\newblock Graph attention networks.
+\newblock \emph{arXiv preprint arXiv:1710.10903} .
+
+\bibitem[{Wang et~al.(2020)Wang, Wang, Ca, Hooi, and Ooi}]{wang2020detecting}
+Wang, Y.; Wang, W.; Ca, Y.; Hooi, B.; and Ooi, B.~C. 2020.
+\newblock Detecting Implementation Bugs in Graph Convolutional Network based
+  Node Classifiers.
+\newblock In \emph{2020 IEEE 31st International Symposium on Software
+  Reliability Engineering (ISSRE)}, 313--324. IEEE.
+
+\bibitem[{Yu, Yin, and Zhu(2017)}]{traffic_2}
+Yu, B.; Yin, H.; and Zhu, Z. 2017.
+\newblock Spatio-temporal graph convolutional networks: A deep learning
+  framework for traffic forecasting.
+\newblock \emph{arXiv preprint arXiv:1709.04875} .
+
+\bibitem[{Zhang et~al.(2012)Zhang, Hamm, Meratnia, Stein, Van De~Voort, and
+  Havinga}]{arima_1}
+Zhang, Y.; Hamm, N.~A.; Meratnia, N.; Stein, A.; Van De~Voort, M.; and Havinga,
+  P.~J. 2012.
+\newblock Statistics-based outlier detection for wireless sensor networks.
+\newblock \emph{International Journal of Geographical Information Science}
+  26(8): 1373--1392.
+
+\bibitem[{Zhou et~al.(2019)Zhou, Liu, Hooi, Cheng, and Ye}]{zhou2019beatgan}
+Zhou, B.; Liu, S.; Hooi, B.; Cheng, X.; and Ye, J. 2019.
+\newblock BeatGAN: Anomalous Rhythm Detection using Adversarially Generated
+  Time Series.
+\newblock In \emph{IJCAI}, 4433--4439.
+
+\bibitem[{Zhou et~al.(2018)Zhou, Qin, Xu, Sadiq, and Yu}]{arima_2}
+Zhou, Y.; Qin, R.; Xu, H.; Sadiq, S.; and Yu, Y. 2018.
+\newblock A data quality control method for seafloor observatories: the
+  application of observed time series data in the East China Sea.
+\newblock \emph{Sensors} 18(8): 2628.
+
+\bibitem[{Zong et~al.(2018)Zong, Song, Min, Cheng, Lumezanu, Cho, and
+  Chen}]{dagmm}
+Zong, B.; Song, Q.; Min, M.~R.; Cheng, W.; Lumezanu, C.; Cho, D.; and Chen, H.
+  2018.
+\newblock Deep autoencoding gaussian mixture model for unsupervised anomaly
+  detection.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\end{thebibliography}
