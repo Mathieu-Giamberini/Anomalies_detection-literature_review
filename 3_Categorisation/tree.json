@@ -1,0 +1,1130 @@
+{
+    "106": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Correlation- and Interaction-Aware Anomaly Detection",
+        "id": 106,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "2D-Mx": {
+        "children": [
+            "PIP",
+            "PP",
+            "79",
+            "80"
+        ],
+        "depth": 2.0,
+        "fullName": "2D matrix",
+        "id": 78,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "69": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 69,
+        "isChosen": false,
+        "parentName": "IU"
+    },
+    "79": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 79,
+        "isChosen": false,
+        "parentName": "2D-Mx"
+    },
+    "80": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 80,
+        "isChosen": false,
+        "parentName": "2D-Mx"
+    },
+    "AD": {
+        "children": [
+            "Predictive",
+            "Cluster",
+            "Classical",
+            "Deviation",
+            "add-on"
+        ],
+        "depth": 0.0,
+        "fullName": "Anomaly detection",
+        "id": 1,
+        "isChosen": false,
+        "parentName": null
+    },
+    "AE": {
+        "children": [
+            "VAE",
+            "SAE",
+            "SPEAD",
+            "S-RNNs",
+            "LSTM-AE",
+            "MU-Net",
+            "MSCRED",
+            "USAD",
+            "GCAM",
+            "MVCGED",
+            "GSAE"
+        ],
+        "depth": 3.0,
+        "fullName": "Autoencoder ",
+        "id": 13,
+        "isChosen": false,
+        "parentName": "Dim reduc"
+    },
+    "AR": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Autoregression",
+        "id": 125,
+        "isChosen": true,
+        "parentName": "EKF"
+    },
+    "ARIMA ": {
+        "children": [
+            "ARIMAX",
+            "SARIMA"
+        ],
+        "depth": 3.0,
+        "fullName": "Auto-regressive Integrated Moving-average ",
+        "id": 18,
+        "isChosen": false,
+        "parentName": "EKF"
+    },
+    "ARIMAX": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "ARIMA exogenous ",
+        "id": 21,
+        "isChosen": false,
+        "parentName": "ARIMA "
+    },
+    "ATF-UAD": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Adversarial Time\u2013Frequency Reconstruction Network for Unsupervised Anomaly Detection",
+        "id": 109,
+        "isChosen": false,
+        "parentName": null
+    },
+    "AddGraph": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 82,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "AlexNet": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "AlexNet",
+        "id": 23,
+        "isChosen": false,
+        "parentName": "CNN"
+    },
+    "Attention": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": null,
+        "id": 85,
+        "isChosen": false,
+        "parentName": null
+    },
+    "Bayesian": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Bayesian network",
+        "id": 26,
+        "isChosen": false,
+        "parentName": "Classical"
+    },
+    "BeatGAN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 44,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "CNN": {
+        "children": [
+            "TCN",
+            "AlexNet",
+            "DCAD"
+        ],
+        "depth": 2.0,
+        "fullName": "Convolutional neural networks ",
+        "id": 14,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "CatGAN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 98,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "Classical": {
+        "children": [
+            "Vector",
+            "FT",
+            "Linear",
+            "Bayesian",
+            "Tree"
+        ],
+        "depth": 1.0,
+        "fullName": "Classical methods ",
+        "id": 2,
+        "isChosen": false,
+        "parentName": "AD"
+    },
+    "Cluster": {
+        "children": [
+            "Distance",
+            "GMM",
+            "Density",
+            "PCA",
+            "DBSCAN",
+            "SCAN",
+            "MapReduce",
+            "k-means++ ",
+            "ELM-MI",
+            "MGM"
+        ],
+        "depth": 1.0,
+        "fullName": "Clustering-based methods ",
+        "id": 3,
+        "isChosen": false,
+        "parentName": "AD"
+    },
+    "Contamination": {
+        "children": [
+            "Core loss",
+            "LOE",
+            "IAD "
+        ],
+        "depth": 2.0,
+        "fullName": "Deal with contamiated training data for UAD",
+        "id": 121,
+        "isChosen": true,
+        "parentName": "add-on"
+    },
+    "Core loss": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Core loss",
+        "id": 118,
+        "isChosen": false,
+        "parentName": "Contamination"
+    },
+    "Cube": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "data cube technique",
+        "id": 89,
+        "isChosen": false,
+        "parentName": "Deviation"
+    },
+    "DAAE": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Distribution alignment autoencoder ",
+        "id": 124,
+        "isChosen": false,
+        "parentName": "Density"
+    },
+    "DAGMM": {
+        "children": [
+            "PRDAGMM"
+        ],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 72,
+        "isChosen": true,
+        "parentName": "GMM"
+    },
+    "DBSCAN": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Density-based spatial clustering of applications with noise ",
+        "id": 11,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "DCAD": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Densely Contrastive Anomaly Detection",
+        "id": 108,
+        "isChosen": false,
+        "parentName": "CNN"
+    },
+    "DCGAN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "\u00a0multi-time scale deep convolutional\u00a0generative adversarial network",
+        "id": 107,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "DD - LCSS -DTW": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Derivative distance with DTW and LCSS",
+        "id": 86,
+        "isChosen": false,
+        "parentName": "Distance"
+    },
+    "DTW": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Dynamic time warping ",
+        "id": 24,
+        "isChosen": false,
+        "parentName": "Distance"
+    },
+    "Deep": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Deep leaning",
+        "id": 4,
+        "isChosen": false,
+        "parentName": null
+    },
+    "Density": {
+        "children": [
+            "LOF",
+            "LSC",
+            "MDEF",
+            "NegCo",
+            "DAAE"
+        ],
+        "depth": 2.0,
+        "fullName": "Density-based methods ",
+        "id": 6,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "Deviation": {
+        "children": [
+            "Cube"
+        ],
+        "depth": 1.0,
+        "fullName": "Data deviation AD",
+        "id": 90,
+        "isChosen": false,
+        "parentName": "AD"
+    },
+    "Dim reduc": {
+        "children": [
+            "AE",
+            "IU",
+            "SPREAD"
+        ],
+        "depth": 2.0,
+        "fullName": "Dimensional reduction",
+        "id": 68,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "Distance": {
+        "children": [
+            "DTW",
+            "Euclid",
+            "DD - LCSS -DTW",
+            "ERP",
+            "ROCK"
+        ],
+        "depth": 2.0,
+        "fullName": "Distance-based methods",
+        "id": 7,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "ECG": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 102,
+        "isChosen": false,
+        "parentName": "Trfmr"
+    },
+    "EKF": {
+        "children": [
+            "ARIMA ",
+            "AR"
+        ],
+        "depth": 2.0,
+        "fullName": "Extended Kalman Filter ",
+        "id": 28,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "ELM-MI": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Extreme learning machine\u00a0and\u00a0mutual information\u00a0",
+        "id": 105,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "ERP": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Edit Distance on Real Sequence",
+        "id": 87,
+        "isChosen": false,
+        "parentName": "Distance"
+    },
+    "Euclid": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Euclidean distance",
+        "id": 25,
+        "isChosen": false,
+        "parentName": "Distance"
+    },
+    "FT": {
+        "children": [
+            "STFT"
+        ],
+        "depth": 2.0,
+        "fullName": "Fourier transform",
+        "id": 8,
+        "isChosen": false,
+        "parentName": "Classical"
+    },
+    "GAN": {
+        "children": [
+            "BeatGAN",
+            "MAD-GAN",
+            "WGAN-based",
+            "RSM-GAN",
+            "CatGAN",
+            "DCGAN"
+        ],
+        "depth": 2.0,
+        "fullName": "Generative adversarial network",
+        "id": 30,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "GCAM": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 99,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "GDN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Graph Deviation Network",
+        "id": 56,
+        "isChosen": true,
+        "parentName": "GNN"
+    },
+    "GGM-VAE": {
+        "children": [],
+        "depth": 5.0,
+        "fullName": null,
+        "id": 53,
+        "isChosen": false,
+        "parentName": "VAE"
+    },
+    "GMDNN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Gaussian mixeddensity neural network",
+        "id": 101,
+        "isChosen": false,
+        "parentName": "GMM"
+    },
+    "GMM": {
+        "children": [
+            "DAGMM",
+            "GMDNN",
+            "LogLM"
+        ],
+        "depth": 2.0,
+        "fullName": "Gaussian mixture model ",
+        "id": 12,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "GNN": {
+        "children": [
+            "MTAD-GAT",
+            "GDN",
+            "MATD-GAT",
+            "AddGraph",
+            "MTAD-TF",
+            "GTA",
+            "106"
+        ],
+        "depth": 2.0,
+        "fullName": "Graph Neural Network",
+        "id": 55,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "GRU": {
+        "children": [
+            "THOC"
+        ],
+        "depth": 3.0,
+        "fullName": "Gated recurrent units ",
+        "id": 29,
+        "isChosen": false,
+        "parentName": "RNN"
+    },
+    "GSAE": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "Attention graph stacked autoencoder",
+        "id": 103,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "GTA": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 84,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "GTA*": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 51,
+        "isChosen": false,
+        "parentName": "Trfmr"
+    },
+    "HS-TCN": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 60,
+        "isChosen": false,
+        "parentName": "TCN"
+    },
+    "HTM": {
+        "children": [
+            "HTM-based",
+            "RADM"
+        ],
+        "depth": 2.0,
+        "fullName": "Hierarchical temporal memory ",
+        "id": 31,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "HTM-based": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 63,
+        "isChosen": false,
+        "parentName": "HTM"
+    },
+    "IAD ": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Iterative Anomaly Detection",
+        "id": 122,
+        "isChosen": false,
+        "parentName": "Contamination"
+    },
+    "ILSFS": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Knowledge-based target variables into inner feature selectors",
+        "id": 110,
+        "isChosen": false,
+        "parentName": null
+    },
+    "IU": {
+        "children": [
+            "69",
+            "ODCA"
+        ],
+        "depth": 3.0,
+        "fullName": "Independent univariate",
+        "id": 74,
+        "isChosen": false,
+        "parentName": "Dim reduc"
+    },
+    "LGMAD": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 58,
+        "isChosen": false,
+        "parentName": "RNN"
+    },
+    "LOE": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Latent Outlier Exposure ",
+        "id": 119,
+        "isChosen": false,
+        "parentName": "Contamination"
+    },
+    "LOF": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "local outlier factor",
+        "id": 92,
+        "isChosen": false,
+        "parentName": "Density"
+    },
+    "LSC": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "local sparsity coefficient",
+        "id": 93,
+        "isChosen": false,
+        "parentName": "Density"
+    },
+    "LSTM": {
+        "children": [
+            "LSTM-NDT"
+        ],
+        "depth": 3.0,
+        "fullName": "Long short term memory neural networks",
+        "id": 15,
+        "isChosen": false,
+        "parentName": "RNN"
+    },
+    "LSTM-AE": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 40,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "LSTM-NDT": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 57,
+        "isChosen": false,
+        "parentName": "LSTM"
+    },
+    "LSTM-VAE": {
+        "children": [],
+        "depth": 5.0,
+        "fullName": null,
+        "id": 52,
+        "isChosen": false,
+        "parentName": "VAE"
+    },
+    "LUAD": {
+        "children": [],
+        "depth": 5.0,
+        "fullName": "Lightweight unsupervised anomaly detection",
+        "id": 104,
+        "isChosen": false,
+        "parentName": "VAE"
+    },
+    "Linear": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Linear model-based methods ",
+        "id": 9,
+        "isChosen": false,
+        "parentName": "Classical"
+    },
+    "LogLM": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Log-linear mixture ",
+        "id": 115,
+        "isChosen": false,
+        "parentName": "GMM"
+    },
+    "MAD-GAN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 45,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "MATD-GAT": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 81,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "MDEF": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "multi-granularity deviation factor",
+        "id": 94,
+        "isChosen": false,
+        "parentName": "Density"
+    },
+    "MGM": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "multivariate Gaussian Models",
+        "id": 114,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "MSCRED": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 42,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "MTAD-GAT": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 48,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "MTAD-TF": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 83,
+        "isChosen": false,
+        "parentName": "GNN"
+    },
+    "MTSM": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 50,
+        "isChosen": false,
+        "parentName": "Trfmr"
+    },
+    "MU-Net": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 41,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "MVCGED": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 100,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "MVDD": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Multiscale support vector data description",
+        "id": 32,
+        "isChosen": false,
+        "parentName": "Vector"
+    },
+    "MapReduce": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": null,
+        "id": 66,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "NegCo": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Negative correlation ",
+        "id": 123,
+        "isChosen": false,
+        "parentName": "Density"
+    },
+    "OCSVM": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "One-class support vector machine ",
+        "id": 33,
+        "isChosen": false,
+        "parentName": "Vector"
+    },
+    "ODCA": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 70,
+        "isChosen": false,
+        "parentName": "IU"
+    },
+    "OmniAnomaly": {
+        "children": [],
+        "depth": 5.0,
+        "fullName": null,
+        "id": 54,
+        "isChosen": false,
+        "parentName": "VAE"
+    },
+    "PCA": {
+        "children": [
+            "R-PCA",
+            "RPCA"
+        ],
+        "depth": 2.0,
+        "fullName": "Principal component analysis",
+        "id": 112,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "PIP": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Pairwise inner-product",
+        "id": 76,
+        "isChosen": false,
+        "parentName": "2D-Mx"
+    },
+    "PP": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Pairwise phase",
+        "id": 77,
+        "isChosen": false,
+        "parentName": "2D-Mx"
+    },
+    "PRDAGMM": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "Pyramid Reconstruction Assisted Deep Autoencoding Gaussian Mixture Model",
+        "id": 95,
+        "isChosen": false,
+        "parentName": "DAGMM"
+    },
+    "Predictive": {
+        "children": [
+            "Dim reduc",
+            "GNN",
+            "CNN",
+            "GAN",
+            "RNN",
+            "2D-Mx",
+            "Trfmr",
+            "HTM",
+            "EKF"
+        ],
+        "depth": 1.0,
+        "fullName": "Predictive model",
+        "id": 5,
+        "isChosen": false,
+        "parentName": "AD"
+    },
+    "R-PCA": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "recursive principal component analysis ",
+        "id": 71,
+        "isChosen": false,
+        "parentName": "PCA"
+    },
+    "RADM": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 64,
+        "isChosen": false,
+        "parentName": "HTM"
+    },
+    "RNN": {
+        "children": [
+            "LSTM",
+            "GRU",
+            "LGMAD"
+        ],
+        "depth": 2.0,
+        "fullName": "Recurrent neural networks ",
+        "id": 16,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "ROCK": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 88,
+        "isChosen": false,
+        "parentName": "Distance"
+    },
+    "RP-LREC": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Recurrence plot with local recurrence rates",
+        "id": 34,
+        "isChosen": false,
+        "parentName": null
+    },
+    "RPCA": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Robust PCA",
+        "id": 113,
+        "isChosen": false,
+        "parentName": "PCA"
+    },
+    "RSM-GAN": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 47,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "S-RNNs": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 39,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "SAE": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "Stacked autoencoder",
+        "id": 19,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "SARIMA": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "Seasonal ARIMA ",
+        "id": 22,
+        "isChosen": false,
+        "parentName": "ARIMA "
+    },
+    "SAnD": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 49,
+        "isChosen": false,
+        "parentName": "Trfmr"
+    },
+    "SCAN": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": null,
+        "id": 65,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "SHAP": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Shapley Additive explanation",
+        "id": 111,
+        "isChosen": false,
+        "parentName": null
+    },
+    "SPEAD": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 38,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "SPREAD": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Sparse Recurrent Neural Network based Anomaly Detection",
+        "id": 73,
+        "isChosen": false,
+        "parentName": "Dim reduc"
+    },
+    "STFT": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 97,
+        "isChosen": false,
+        "parentName": "FT"
+    },
+    "STW": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": "Stationary wavelet transform ",
+        "id": 35,
+        "isChosen": false,
+        "parentName": null
+    },
+    "TCN": {
+        "children": [
+            "HS-TCN",
+            "TCN-GMM",
+            "TCN-ms",
+            "TCN-AE"
+        ],
+        "depth": 3.0,
+        "fullName": "Temporal convolutional networks ",
+        "id": 59,
+        "isChosen": true,
+        "parentName": "CNN"
+    },
+    "TCN-AE": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 117,
+        "isChosen": false,
+        "parentName": "TCN"
+    },
+    "TCN-GMM": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 61,
+        "isChosen": false,
+        "parentName": "TCN"
+    },
+    "TCN-ms": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 62,
+        "isChosen": false,
+        "parentName": "TCN"
+    },
+    "THOC": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": "Temporal hierarchical one class network ",
+        "id": 36,
+        "isChosen": false,
+        "parentName": "GRU"
+    },
+    "Tree": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Decision tree",
+        "id": 27,
+        "isChosen": false,
+        "parentName": "Classical"
+    },
+    "Trfmr": {
+        "children": [
+            "SAnD",
+            "MTSM",
+            "GTA*",
+            "ECG"
+        ],
+        "depth": 2.0,
+        "fullName": "Transformer",
+        "id": 17,
+        "isChosen": false,
+        "parentName": "Predictive"
+    },
+    "USAD": {
+        "children": [],
+        "depth": 4.0,
+        "fullName": null,
+        "id": 43,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "VAE": {
+        "children": [
+            "LSTM-VAE",
+            "GGM-VAE",
+            "OmniAnomaly",
+            "WPT-VAE",
+            "LUAD"
+        ],
+        "depth": 4.0,
+        "fullName": "Variational Autoencoder",
+        "id": 20,
+        "isChosen": false,
+        "parentName": "AE"
+    },
+    "VAR": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": "Vector autoregression ",
+        "id": 37,
+        "isChosen": false,
+        "parentName": "Vector"
+    },
+    "Vector": {
+        "children": [
+            "MVDD",
+            "OCSVM",
+            "VAR"
+        ],
+        "depth": 2.0,
+        "fullName": "Support vector machines ",
+        "id": 10,
+        "isChosen": false,
+        "parentName": "Classical"
+    },
+    "WGAN-based": {
+        "children": [],
+        "depth": 3.0,
+        "fullName": null,
+        "id": 46,
+        "isChosen": false,
+        "parentName": "GAN"
+    },
+    "WPT-VAE": {
+        "children": [],
+        "depth": 5.0,
+        "fullName": null,
+        "id": 96,
+        "isChosen": false,
+        "parentName": "VAE"
+    },
+    "add-on": {
+        "children": [
+            "Contamination"
+        ],
+        "depth": 1.0,
+        "fullName": "Methode to addapt existimg techniaque to solve specific problem",
+        "id": 120,
+        "isChosen": false,
+        "parentName": "AD"
+    },
+    "k-means++ ": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": null,
+        "id": 67,
+        "isChosen": false,
+        "parentName": "Cluster"
+    },
+    "multi-story": {
+        "children": [],
+        "depth": 0.0,
+        "fullName": null,
+        "id": 91,
+        "isChosen": false,
+        "parentName": null
+    }
+}

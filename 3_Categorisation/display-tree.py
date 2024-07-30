@@ -11,6 +11,8 @@ import pandas as pd
 
 import bs4
 
+from enum import Enum
+
 dirPATH  = os.path.dirname(os.path.realpath(__file__))
 os.chdir(dirPATH)
 
@@ -85,52 +87,69 @@ workbook = load_workbook(filename="Categorie-Methode liste.xlsx", data_only=True
 sheet = workbook.active
 
 print("Workbook loaded")
+class treeKeys(Enum):
+    id         = "id"
+    fullName   = "fullName"
+    parentName = "parentName"
+    depth      = "depth"
+    isChosen   = "isChosen"
+    children   = "children"
+
 
 nx_graph = nx.Graph()
-index:dict[str, int] = {} #parent index
-children:dict[str, list[int]] = {}#child list
+nameToId:dict[str, int] = {} #parent index
+tree:dict[str, dict] = {}#Name : [id, full name, parent name, [children name], depth, isChosen]
 
 max_depth = rangeMax(sheet[f"K8:K1000"])
+
+getName = lambda id, name: str(id if name is None else name)
+getRun  = lambda name, parent : not (name is None and parent is None)
 
 i = 8
 run = True
 chosen = []
 while run:
     fullName = sheet[f"H{i}"].value
-    name     = sheet[f"I{i}"].value
+    name_     = sheet[f"I{i}"].value
     parent   = sheet[f"J{i}"].value
     id       = sheet[f"G{i}"].value
     depth = float(sheet[f"K{i}"].value)
 
     isChosen = sheet[f"P{i}"].value == "x"
 
-    if isChosen or name == "AD":
-        chosen.append(i)
+    if isChosen or name_ == "AD":
+        chosen.append(id)
 
-    run = not (name is None and parent is None)
-    name = id if name is None else name
+    run = getRun(name_, parent)
+    name = getName(id, name_)
 
-    if run :
-        index[name] = i 
+    if run:
+        for key in [name, parent] :
+            if (key not in tree.keys()) and  key is not None:
+                tree[key] = {}
+                tree[key][treeKeys.children.value] = []
 
-        parent_name = str(parent)
-        if parent_name in children.keys():
-            children[parent_name].append(i)
-        else:
-            children[parent_name] = [i]
+        tree[name][treeKeys.id.value]         = id
+        tree[name][treeKeys.fullName.value]   = fullName
+        tree[name][treeKeys.parentName.value] = parent
+        tree[name][treeKeys.depth.value]      = depth
+        tree[name][treeKeys.isChosen.value]   = isChosen
+        
+        if parent is not None:
+            tree[str(parent)][treeKeys.children.value].append(name)
 
         if parent is not None or name == "AD":
-            nx_graph.add_node(i, title=fullName, label=str(name), shape= "triangle" if isChosen else "dot" )
-        i += 1
+            nx_graph.add_node(id, title=fullName, label=name, shape="triangle" if isChosen else "dot" )
+    
+    i += 1
 
 
-
-for parent in children.keys():
-    for i_child in children[parent]:    
-        depth = float(sheet[f"K{i_child}"].value)
-
-        if not parent == "None" :
-            nx_graph.add_edge(index[parent], i_child, weight=max_depth - depth)
+for parent in tree.keys():
+    for child in tree[parent][treeKeys.children.value]:    
+        parent_id  = tree[parent][treeKeys.id.value]
+        child_id   = tree[child][treeKeys.id.value]
+        depth      = tree[child][treeKeys.depth.value]
+        nx_graph.add_edge(parent_id, child_id, weight=max_depth - depth)
 
 
 
@@ -161,3 +180,8 @@ soup.body.append(soup.new_tag("div", attrs={"class": "legend"}))
 
 with open(treePath, "w") as file:
     file.write(str(soup.prettify()))
+
+#Export tree to json
+import json
+with open('tree.json', 'w') as f:
+    json.dump(tree, f,sort_keys=True, indent=4)
