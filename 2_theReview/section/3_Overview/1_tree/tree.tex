@@ -1,0 +1,15 @@
+\documentclass[../overview.tex]{subfiles}
+%\documentclass{standalone}
+%\usepackage{forest}
+
+
+\begin{document}
+    \begin{forest} for tree={
+        grow=east,
+        parent anchor=east,
+        child anchor=west,
+        edge path={\noexpand\path[\forestoption{edge}] (\forestOve{\forestove{@parent}}{name}.parent anchor) -- +(+12pt,0) |- (\forestove{name}.child anchor)\forestoption{edge label};}
+    }
+        [Predictive [Dim reduc [AE [VAE [LSTM-VAE ] [GGM-VAE ] [OmniAnomaly ] ] [SAE ] [SPEAD ] [S-RNNs ] ] [IU [69 ] [ODCA ] ] [SPREAD ] ] [GNN [MTAD-GAT ] [GDN ] [MATD-GAT ] ] [CNN [TCN [HS-TCN ] [TCN-GMM ] [TCN-ms ] ] [AlexNet ] [DCAD ] ] [GAN [BeatGAN ] [MAD-GAN ] [WGAN-based ] ] [RNN [LSTM [LSTM-NDT ] ] [GRU [THOC ] ] [LGMAD ] ] [2D-Mx [PIP ] [PP ] [79 ] ] [Trfmr [SAnD ] [MTSM ] [GTA* ] ] [HTM [HTM-based ] [RADM ] ] [EKF [ARIMA  [ARIMAX ] [SARIMA ] ] [AR ] ] ] 
+    \end{forest}
+\end{document}

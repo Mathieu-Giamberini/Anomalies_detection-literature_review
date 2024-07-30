@@ -1,0 +1,16 @@
+%\documentclass[../overview.tex]{subfiles}
+\documentclass{standalone}
+\usepackage{forest}
+\useforestlibrary{edges}
+
+\forestset{multiple directions/.style={for tree={#1}, phantom, for relative level=1{no edge, delay={!c.content/.pgfmath=content("!u")}, before computing xy={l=0,s=0}}},
+    multiple directions/.default={},
+    grow subtree/.style={for tree={grow=#1}}, 
+    grow' subtree/.style={for tree={grow'=#1}}}
+
+\begin{document}
+    \begin{forest} 
+        multiple directions={anchor=center}, forked edges
+        %<tree>
+    \end{forest}
+\end{document}

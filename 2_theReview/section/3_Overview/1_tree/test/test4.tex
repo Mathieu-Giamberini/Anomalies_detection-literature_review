@@ -1,0 +1,37 @@
+%\documentclass[../overview.tex]{subfiles}
+\documentclass{article}
+\usepackage{forest}
+\useforestlibrary{edges}
+
+\forestset{multiple directions/.style={for tree={#1}, phantom, for relative level=1{no edge, delay={!c.content/.pgfmath=content("!u")}, before computing xy={l=0,s=0}}},
+    multiple directions/.default={},
+    grow subtree/.style={for tree={grow=#1}}, 
+    grow' subtree/.style={for tree={grow'=#1}}}
+
+
+\usepackage{geometry}
+\geometry{hmargin=1cm,vmargin=2cm}
+
+
+\begin{document}
+    \begin{forest} 
+        multiple directions={anchor=center}, forked edges
+        [AD [, grow subtree=south 
+            [Predictive, grow subtree=east [Dim reduc [AE [VAE [LSTM-VAE ] [GGM-VAE ] [OmniAnomaly ] [WPT-VAE ] [LUAD ] ] [SAE ] [SPEAD ] [S-RNNs ] [LSTM-AE ] [MU-Net ] [MSCRED ] [USAD ] [GCAM ] [MVCGED ] [GSAE ] ] [IU [69 ] [ODCA ] ] [SPREAD ] ] [GNN [MTAD-GAT ] [GDN ] [MATD-GAT ] [AddGraph ] [MTAD-TF ] [GTA ] [106 ] ] [CNN [TCN [HS-TCN ] [TCN-GMM ] [TCN-ms ] [TCN-AE ] ] [AlexNet ] [DCAD ] ] [GAN [BeatGAN ] [MAD-GAN ] [WGAN-based ] [RSM-GAN ] [CatGAN ] [DCGAN ] ] [RNN [LSTM [LSTM-NDT ] ] [GRU [THOC ] ] [LGMAD ] ] [2D-Mx [PIP ] [PP ] [79 ] [80 ] ] [Trfmr [SAnD ] [MTSM ] [GTA* ] [ECG ] ] [HTM [HTM-based ] [RADM ] ] [EKF [ARIMA  [ARIMAX ] [SARIMA ] ] [AR ] ] ]
+            [Cluster, grow subtree=east [Distance [DTW ] [Euclid ] [DD - LCSS -DTW ] [ERP ] [ROCK ] ] [GMM [DAGMM [PRDAGMM ] ] [GMDNN ] [LogLM ] ] [Density [LOF ] [LSC ] [MDEF ] [NegCo ] [DAAE ] ] [PCA [R-PCA ] [RPCA ] ] [DBSCAN ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
+            [|, grow subtree=east
+                [Classical [Vector [MVDD ] [OCSVM ] [VAR ] ] [FT [STFT ] ] [Linear ] [Bayesian ] [Tree ] ]
+                [add-on [Contamination [Core loss ] [LOE ] [IAD  ] ] ]
+            ]
+        ]]
+    \end{forest}
+    \begin{forest} 
+        multiple directions={anchor=center}, forked edges
+        [AD [, grow subtree=south 
+            [Predictive, grow subtree=east [Dim reduc [AE [VAE [LSTM-VAE ] [GGM-VAE ] [OmniAnomaly ] [WPT-VAE ] [LUAD ] ] [SAE ] [SPEAD ] [S-RNNs ] [LSTM-AE ] [MU-Net ] [MSCRED ] [USAD ] [GCAM ] [MVCGED ] [GSAE ] ] [IU [69 ] [ODCA ] ] [SPREAD ] ] [GNN [MTAD-GAT ] [GDN ] [MATD-GAT ] [AddGraph ] [MTAD-TF ] [GTA ] [106 ] ] [CNN [TCN [HS-TCN ] [TCN-GMM ] [TCN-ms ] [TCN-AE ] ] [AlexNet ] [DCAD ] ] [GAN [BeatGAN ] [MAD-GAN ] [WGAN-based ] [RSM-GAN ] [CatGAN ] [DCGAN ] ] [RNN [LSTM [LSTM-NDT ] ] [GRU [THOC ] ] [LGMAD ] ] [2D-Mx [PIP ] [PP ] [79 ] [80 ] ] [Trfmr [SAnD ] [MTSM ] [GTA* ] [ECG ] ] [HTM [HTM-based ] [RADM ] ] [EKF [ARIMA  [ARIMAX ] [SARIMA ] ] [AR ] ] ]
+            [Cluster, grow subtree=east [Distance [DTW ] [Euclid ] [DD - LCSS -DTW ] [ERP ] [ROCK ] ] [GMM [DAGMM [PRDAGMM ] ] [GMDNN ] [LogLM ] ] [Density [LOF ] [LSC ] [MDEF ] [NegCo ] [DAAE ] ] [PCA [R-PCA ] [RPCA ] ] [DBSCAN ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
+            [Classical [Vector [MVDD ] [OCSVM ] [VAR ] ] [FT [STFT ] ] [Linear ] [Bayesian ] [Tree ] ]
+            [add-on [Contamination [Core loss ] [LOE ] [IAD  ] ] ]
+        ]]
+    \end{forest}
+\end{document}

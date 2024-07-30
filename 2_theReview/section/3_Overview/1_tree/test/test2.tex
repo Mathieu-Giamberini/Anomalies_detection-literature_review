@@ -1,0 +1,72 @@
+%form https://tex.stackexchange.com/questions/151042/forest-different-growing-directions-for-branches-on-the-same-level/643061#643061
+\documentclass{article}
+
+\usepackage{forest}
+\useforestlibrary{edges}
+
+\forestset{multiple directions/.style={for tree={#1}, phantom, for relative level=1{no edge, delay={!c.content/.pgfmath=content("!u")}, before computing xy={l=0,s=0}}},
+    multiple directions/.default={},
+    grow subtree/.style={for tree={grow=#1}}, 
+    grow' subtree/.style={for tree={grow'=#1}}}
+
+\begin{document}
+
+\begin{forest}
+    multiple directions
+    [root 
+      [ 
+        [child 1 [a][b]]
+      ]
+      [, grow subtree=150
+        [child 2 [c][d][e]]
+      ]
+      [, grow' subtree=30
+        [child 3 [f][g]]
+      ]
+    ]
+\end{forest}
+
+\vspace{1cm}
+\begin{forest}
+    multiple directions={minimum height=4ex, anchor=center, forked edge}
+    [R 
+      [, grow' subtree=east
+        [1 [a][b]]
+        [2 [c][d]]
+        [3 [e][f]]]
+      [, grow subtree=west
+        [4 [g][h]]
+        [5 [i][j]]
+        [6 [k][l]]
+      ]
+    ]
+\end{forest}
+
+\vspace{1cm}
+\begin{forest}
+    multiple directions={minimum width=2.5em, anchor=center, circle, draw}
+    [c
+      [, grow' subtree=north
+        [a[a1][a2]]
+        [b[b1][b2]]]
+      [ 
+        [d[d1][d2]]
+        [e[e1][e2]]]
+    ]
+\end{forest}
+
+\vspace{1cm}
+\begin{forest}
+    multiple directions, forked edges
+    [0
+      [, grow subtree=west
+        [1[1a][1b]][2[2a][2b]]]
+      [, grow' subtree=east
+        [3[3a][3b]][4[4a][4b, multiple directions, phantom=false
+            [, grow' subtree=east[x[x1][x2]]]
+            [, grow subtree=south[y[y1][y2]]]
+        ]]]
+    ]
+\end{forest}
+
+\end{document}

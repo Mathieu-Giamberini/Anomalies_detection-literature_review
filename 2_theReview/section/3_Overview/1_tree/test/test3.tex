@@ -1,0 +1,31 @@
+%\documentclass[../overview.tex]{subfiles}
+\documentclass{standalone}
+\usepackage{forest}
+\useforestlibrary{edges}
+
+\forestset{multiple directions/.style={for tree={#1}, phantom, for relative level=1{no edge, delay={!c.content/.pgfmath=content("!u")}, before computing xy={l=0,s=0}}},
+    multiple directions/.default={},
+    grow subtree/.style={for tree={grow=#1}}, 
+    grow' subtree/.style={for tree={grow'=#1}}}
+
+
+\begin{document}
+    \begin{forest} 
+        multiple directions={anchor=center}, forked edges
+        [AD [, grow subtree=south
+            [Predictive, grow subtree=east  [Dim reduc ] [GNN ] [CNN ] [GAN ] [RNN ] [2D-Mx ] [Trfmr ] [HTM ] [EKF ] ]
+            [Cluster,    grow subtree=east  [Distance ] [GMM ] [Density ] [PCA ] [DBSCAN ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
+            [Classical,  grow subtree=east  [Vector ] [FT ] [Linear ] [Bayesian ] [Tree ] ]
+            [Deviation,  grow subtree=east  [Cube ] ]
+            [add-on,     grow subtree=east  [Contamination ] ]
+        ]]
+    \end{forest}
+\end{document}
+
+%[AD 
+%    [Predictive [Dim reduc ] [GNN ] [CNN ] [GAN ] [RNN ] [2D-Mx ] [Trfmr ] [HTM ] [EKF ] ]
+%    [Cluster [Distance ] [GMM ] [Density ] [PCA ] [DBSCAN ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
+%    [Classical [Vector ] [FT ] [Linear ] [Bayesian ] [Tree ] ]
+%    [Deviation [Cube ] ]
+%    [add-on [Contamination ] ]
+%] 
