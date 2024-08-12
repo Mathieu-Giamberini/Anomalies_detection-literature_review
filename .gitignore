@@ -3,12 +3,12 @@
 Citavi Attachments/
 
 #LateX compile file
-2_theReview/**/*.aux
-2_theReview/**/*.fdb_latexmk
-2_theReview/**/*.fls
-2_theReview/**/*.log
-2_theReview/**/*.gz
-2_theReview/**/*.out
+/**/*.aux
+/**/*.fdb_latexmk
+/**/*.fls
+/**/*.log
+/**/*.synctex.gz
+/**/*.out
 
 #Python
 .venv/
