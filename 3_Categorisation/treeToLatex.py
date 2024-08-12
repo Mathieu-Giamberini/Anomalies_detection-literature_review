@@ -1,12 +1,14 @@
 import os
 import json
+os.system(f"pdflatex ")
 
 #Path
 dirPATH  = os.path.dirname(os.path.realpath(__file__)) 
 os.chdir(dirPATH)
 
 LaTeX_path = "..\\2_theReview\\section\\3_Overview\\1_tree\\"
-template_path = LaTeX_path + "template\\template.tex"
+template_main_path = LaTeX_path + "template\\template.tex"
+template_standalone_path = LaTeX_path + "template\\template_standalone.tex"
 
 json_tree_path = "tree.json"
 
@@ -42,15 +44,28 @@ def treeSyntax(node:str, child:str, depth:int):
             return f"[{node} {child}] "
     
 
+def saveToTex(template_path:str, save_path:str, tree_tex:str):
+    """Save to a latex file"""
+    with open(template_path, "r") as template_file:
+        template = template_file.read()
+
+    tex = template.replace("%<tree>", tree_tex)
+
+    with open(save_path, "w") as tree_file:
+        tree_file.write(tex)
+
+
 
 
 with open(json_tree_path, "r") as json_tree:
     tree = json.load(json_tree)
 
-with open(template_path, "r") as template_file:
-    template = template_file.read()
+tree_forest_tex =dictToTex(treeTotree_rec(tree, "AD"))
 
-tex = template.replace("%<tree>", dictToTex(treeTotree_rec(tree, "AD")))
+#Main
+saveToTex(template_main_path, LaTeX_path + "test\\test5.tex", tree_forest_tex)
 
-with open(LaTeX_path + "test\\test5.tex", "w") as tree_file:
-    tree_file.write(tex)
+#Standalone
+tex_dir = ".\\tree_tex\\"
+file_name = "tree.tex"
+saveToTex(template_standalone_path, tex_dir + file_name, tree_forest_tex)
