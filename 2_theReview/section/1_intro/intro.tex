@@ -16,15 +16,14 @@
     Therefor in this paper we will, have a first look of at the littery landscape of Anomaly detection method (ADM).
     First lets define exactly what we mean by that, given a multivariate time series: 
     \[\mathcal{X} = (\textbf{x}_1, \dots \textbf{x}_t, \dots \textbf{x}_T) \in \mathbb{R}^{N \times T}\]
-    with $N$ the number of sensor and $T$ the number of temporal indices. The method $\mathcal{M} $ will return a binary category for each data point 
-    telling where and when their is anomaly, ie:
+    with $N$ the number of sensors and $T$ the number of temporal indices. The method $\mathcal{M} $ will return a binary category for each data point 
+    telling where and when there is anomalies, ie:
     \[\mathcal{M} : \mathbb{R}^{N \times T} \to \left\{0, 1\right\} ^{N \times T}\]
-    We need to address some looses threads with this definition, first in most cases their is no ready to use labeled data to train the method on
-    and labeling it by hand is no feasible, so the method must be unsupervised. Witch raise the need for a systemic definition of anomaly, 
-    most papers (ref) consider the training data to be normal and define some anomaly score which tel how far is the new data. Here the methods will 
+    We need to address some looses ends with this definition. First, in most cases, their is no already labeled data to train the method on
+    and labeling it by hand is not feasible. So the method must be unsupervised, which raise the need for a systemic definition of anomaly. 
+    Most papers (ref) consider the training data to be normal and define some anomaly score which tel how far is the new data. Here the methods will 
     be categorize base on the way this score is define.\\
     %TODO ref
-    For our context the training data is previous tunnel bore, which certainly contains anomaly in it, therefor we will also discus some 
-    papers witch tyred to address this issue by modifying the methods. The approach is sufficiently general to be use on most ADM, this will
-    be categorize as an add-on, which will be a categories of method who don't do AD per say but can make the the method better. 
+    In our context, the training data is previous tunnel bore, which certainly contains anomaly in it. Therefor we will also discus some 
+    papers which tyred to address this issue by modifying the methods. 
 \end{document}
