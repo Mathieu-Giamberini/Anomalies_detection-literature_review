@@ -21,12 +21,23 @@
     
     \subsection{Clustering method}
         While storing metric screw in the ware house some one pick an imperial one, he want find any box to put it in.
-        Therefor he will conclude a error in the shipment, even if he didn't know this type of screw. This is the core 
+        Therefor he will conclude a error in the shipment, even if he didn't know this type of screw. This is the main 
         idea for the clustering method, define clusters, if a new data point can't fit in one of them it labeled as an anomaly.  
         There is multiple way to define the cluster. A good part use some define distance [ref DTW] function and use a variant of K-nearest-neighbor (KNN)
         [ref DBSCAN]. In a similar fashion use the density of the data point in relation with the training data which will 
         give less strick categorizes [ref LOF]. An other method is to estimate the probability density function (PDF) 
         and put a threshold on low values. [ref DAGMM]
+
+    \subsection{Index monitoring}
+        After assembly, of the disks cutters there are put under pressure for some time. When the time is up, the 
+        pressure is measured, if the pressure is to low there is a problem some where. This is the intuition behind index 
+        monitoring method, define some function with an acceptable range of normal values, if the values is outside the range 
+        its mark as anomaly. This technic is one of the oldest, simplest and most use in the manufacturing industries, in
+        this context are referred as Control chart [ref Control chart]. An other example of application is [ref AR] which 
+        use a modify wavelet transform to define a Health Index [HI] to monitor bearings. 
+
+    \subsection{}
+
         
     %\subfile{./plan.tex}
     
