@@ -1,6 +1,27 @@
 \documentclass[../../main/main.tex]{subfiles}
 
 \begin{document}
-    \subfile{./plan.tex}
-    \subfile{./1_tree/tree.tex}
+    \begin{figure*}[hp]
+        \makebox[\textwidth]{\subfile{./1_tree/tree.tex}}
+        \caption{Anomaly detection method categorization}
+    \end{figure*}
+
+    Anomaly detection method can be categorize in many way. In this paper its divided in two parts,
+    general method and useful ticks to improve theses. The former represent general ways to 
+    solve the AD problem. Its compose of tree categorizes : forecasting, clustering and index monitoring.
+    The latter are so called add-on. The papers in this category present a AD method with some tricks which,
+    in our mind can be applied for any method to improve it.
+    \subsection{Forecasting Methods}
+        When working all day long with some equipment, you know it so well that if asked you could almost 
+        predict the sound it will make in some close future. But if suddenly sound doesn't match 
+        your expectation  you know there is some things wrong.
+        That is the core idea for the forecasting method, predict the near future using some generative method
+        and if the error go over some threshold the data point is labeled as an anomaly. Example of those technic 
+        may be LSTM [ref claim LSTM is the best] or using time convolution (TCN) [Ref TCN].
+    
+    \subsection{Clustering method}
+        
+        
+    %\subfile{./plan.tex}
+    
 \end{document}
