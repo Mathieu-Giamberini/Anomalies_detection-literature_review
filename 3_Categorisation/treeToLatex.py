@@ -63,7 +63,7 @@ with open(json_tree_path, "r") as json_tree:
 tree_forest_tex =dictToTex(treeTotree_rec(tree, "AD"), tree)
 
 #Main
-#saveToTex(template_main_path, LaTeX_path + "test\\test5.tex", tree_forest_tex)
+saveToTex(template_main_path, LaTeX_path + "gen\\tree.tex", tree_forest_tex)
 
 #Standalone
 tex_dir = ".\\tree_tex\\"

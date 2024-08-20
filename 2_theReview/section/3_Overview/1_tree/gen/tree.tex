@@ -1,7 +1,4 @@
-%\documentclass[../overview.tex]{subfiles}
-\documentclass{standalone}
-\usepackage{forest}
-\useforestlibrary{edges}
+\documentclass[../overview.tex]{subfiles}
 
 \forestset{multiple directions/.style={for tree={#1}, phantom, for relative level=1{no edge, delay={!c.content/.pgfmath=content("!u")}, before computing xy={l=0,s=0}}},
     multiple directions/.default={},
