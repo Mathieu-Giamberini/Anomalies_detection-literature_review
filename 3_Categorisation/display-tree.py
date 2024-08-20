@@ -94,6 +94,7 @@ class treeKeys(Enum):
     depth      = "depth"
     isChosen   = "isChosen"
     children   = "children"
+    hideTex    = "hideTex"
 
 
 nx_graph = nx.Graph()
@@ -110,10 +111,9 @@ run = True
 chosen = []
 while run:
     fullName = sheet[f"H{i}"].value
-    name_     = sheet[f"I{i}"].value
+    name_    = sheet[f"I{i}"].value
     parent   = sheet[f"J{i}"].value
     id       = sheet[f"G{i}"].value
-    depth = float(sheet[f"K{i}"].value)
 
     isChosen = sheet[f"P{i}"].value == "x"
 
@@ -132,8 +132,9 @@ while run:
         tree[name][treeKeys.id.value]         = id
         tree[name][treeKeys.fullName.value]   = fullName
         tree[name][treeKeys.parentName.value] = parent
-        tree[name][treeKeys.depth.value]      = depth
+        tree[name][treeKeys.depth.value]      = float(sheet[f"K{i}"].value)
         tree[name][treeKeys.isChosen.value]   = isChosen
+        tree[name][treeKeys.hideTex.value]    = sheet[f"Q{i}"].value == "x"
         
         if parent is not None:
             tree[str(parent)][treeKeys.children.value].append(name)

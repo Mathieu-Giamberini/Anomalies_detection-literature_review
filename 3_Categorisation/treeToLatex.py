@@ -1,6 +1,5 @@
 import os
 import json
-os.system(f"pdflatex ")
 
 #Path
 dirPATH  = os.path.dirname(os.path.realpath(__file__)) 
@@ -22,24 +21,25 @@ def treeTotree_rec(tree:dict, root:str, depth:int=0) -> dict:
     return tree_rec
 
 
-def dictToTex(tree_rec:dict, depth:int = 0) -> str:
+def dictToTex(tree_rec:dict, info:dict, depth:int = 0) -> str:
     """Convert dict tree to forest (LaTeX) tree"""
     tree_tex = ""
 
     for name, sub_tree in tree_rec.items():
-        tree_tex += treeSyntax(name, dictToTex(sub_tree, depth+1), depth)
+        if not info[name]["hideTex"]:
+            tree_tex += treeSyntax(name, dictToTex(sub_tree, info, depth+1), depth, 4)
 
     return tree_tex
 
 
-def treeSyntax(node:str, child:str, depth:int):
+def treeSyntax(node:str, child:str, depth:int, nIndent:int = 0):
     """Get the tree syntax base on the depth"""
-
+    indent = " "*4*nIndent
     match depth:
         case 0:
-            return f"[{node} [, grow subtree=south {child}]]"
+            return f"[{node} [, grow subtree=south{child}\n]]"
         case 1:
-            return f"\n[{node}, grow subtree=east {child}]"
+            return f"\n{indent}[{node}, grow subtree=east, calign=last  {child}]"
         case _: 
             return f"[{node} {child}] "
     
@@ -60,10 +60,10 @@ def saveToTex(template_path:str, save_path:str, tree_tex:str):
 with open(json_tree_path, "r") as json_tree:
     tree = json.load(json_tree)
 
-tree_forest_tex =dictToTex(treeTotree_rec(tree, "AD"))
+tree_forest_tex =dictToTex(treeTotree_rec(tree, "AD"), tree)
 
 #Main
-saveToTex(template_main_path, LaTeX_path + "test\\test5.tex", tree_forest_tex)
+#saveToTex(template_main_path, LaTeX_path + "test\\test5.tex", tree_forest_tex)
 
 #Standalone
 tex_dir = ".\\tree_tex\\"

@@ -11,11 +11,11 @@
 \begin{document}
     \begin{forest} 
         multiple directions={anchor=center}, forked edges
-        [AD [, grow subtree=south 
-            [Predictive, grow subtree=east [Dim reduc [AE [VAE [LSTM-VAE ] [GGM-VAE ] [OmniAnomaly ] [WPT-VAE ] [LUAD ] ] [SAE ] [SPEAD ] [S-RNNs ] [LSTM-AE ] [MU-Net ] [MSCRED ] [USAD ] [GCAM ] [MVCGED ] [GSAE ] ] [IU [69 ] [ODCA ] ] [SPREAD ] ] [GNN [MTAD-GAT ] [GDN ] [MATD-GAT ] [AddGraph ] [MTAD-TF ] [GTA ] [106 ] ] [CNN [TCN [HS-TCN ] [TCN-GMM ] [TCN-ms ] [TCN-AE ] ] [AlexNet ] [DCAD ] ] [GAN [BeatGAN ] [MAD-GAN ] [WGAN-based ] [RSM-GAN ] [CatGAN ] [DCGAN ] ] [RNN [LSTM [LSTM-NDT ] ] [GRU [THOC ] ] [LGMAD ] ] [2D-Mx [PIP ] [PP ] [79 ] [80 ] ] [Trfmr [SAnD ] [MTSM ] [GTA* ] [ECG ] ] [HTM [HTM-based ] [RADM ] ] [EKF [ARIMA  [ARIMAX ] [SARIMA ] ] [AR ] ] ]
-            [Cluster, grow subtree=east [Distance [DTW ] [Euclid ] [DD - LCSS -DTW ] [ERP ] [ROCK ] ] [GMM [DAGMM [PRDAGMM ] ] [GMDNN ] [LogLM ] ] [Density [LOF ] [LSC ] [MDEF ] [NegCo ] [DAAE ] ] [PCA [R-PCA ] [RPCA ] ] [DBSCAN ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
-            [Classical, grow subtree=east [Vector [MVDD ] [OCSVM ] [VAR ] ] [FT [STFT ] ] [Linear ] [Bayesian ] [Tree ] ]
-            [Deviation, grow subtree=east [Cube ] ]
-            [add-on, grow subtree=east [Contamination [Core loss ] [LOE ] [IAD  ] ] ]]]
+        [AD [, grow subtree=south
+                [Forcasting, grow subtree=east, calign=last  [CNN [AlexNet ] [TCN [HS-TCN ] [TCN-GMM ] [TCN-ms ] [TCN-AE ] ] [DCAD ] ] [RNN [LSTM [LSTM-AE ] [LSTM-VAE ] [LSTM-NDT ] ] [GRU [THOC ] ] [LGMAD ] ] [Trfmr [SAnD ] [MTSM ] [ECG ] ] [EKF [ARIMA  [ARIMAX ] [SARIMA ] ] ] [GAN [BeatGAN ] [WGAN-based ] [RSM-GAN ] [CatGAN ] [DCGAN ] ] [HTM [HTM-based ] [RADM ] ] [GNN [MTAD-GAT ] [AddGraph ] [MTAD-TF ] [CIA-GNN ] ] [2D-Mx [PIP ] [PP ] [MSE - L2 ] [GAN-DM ] ] ]
+                [Cluster, grow subtree=east, calign=last  [Density [LOF ] [LSC ] [MDEF ] [NegCo ] [DAAE ] ] [Distance [DTW ] [Euclid ] [DD - LCSS -DTW ] [ERP ] [ROCK ] ] [DBSCAN ] [GMM [DAGMM [PRDAGMM ] ] [GMDNN ] [LogLM ] ] [Bayesian ] [SCAN ] [MapReduce ] [k-means++  ] [ELM-MI ] [MGM ] ]
+                [Index, grow subtree=east, calign=last  [FT [STW ] [STFT ] [AR ] ] [MAD-GAN ] ]
+                [add-on, grow subtree=east, calign=last  [Dim reduc [AE [SAE ] [VAE [GGM-VAE ] [OmniAnomaly ] [LUAD ] ] [SPEAD ] [S-RNNs ] [GSAE ] ] [SPREAD ] [IU [ODCA ] ] [PCA [R-PCA ] [RPCA ] ] ] [Contamination [Core loss ] [LOE ] [IAD  ] ] [Topologie [GDN ] [GTA ] ] ]
+        ]]
     \end{forest}
 \end{document}
