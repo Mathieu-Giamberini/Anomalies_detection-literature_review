@@ -9,7 +9,7 @@
     Anomaly detection method can be categorize in many way. In this paper its divided in two parts,
     general method and useful ticks to improve theses. The former represent general ways to 
     solve the AD problem. Its compose of tree categorizes : forecasting, clustering and index monitoring.
-    The latter are so called add-on. The papers in this category present a AD method with some tricks which,
+    The latter are so called add-ons. The papers in this category present a AD method with some tricks which,
     in our mind can be applied for any method to improve it.
     \subsection{Forecasting Methods}
         When working all day long with some equipment, you know it so well that if asked you could almost 
@@ -34,9 +34,28 @@
         monitoring method, define some function with an acceptable range of normal values, if the values is outside the range 
         its mark as anomaly. This technic is one of the oldest, simplest and most use in the manufacturing industries, in
         this context are referred as Control chart [ref Control chart]. An other example of application is [ref AR] which 
-        use a modify wavelet transform to define a Health Index [HI] to monitor bearings. 
+        use a modify wavelet transform to define a Health Index [ref HI] to monitor bearings. 
 
-    \subsection{}
+    \subsection{Add-ones}
+        In order improve those technics and solve issue intrinsic to the TBM case here are some interesting solutions.\\
+        \textit{Topology}, TBM AD is intrinsically a multivariate problem (ie their is more than one sensor on the machine).
+        And it is safe to assume that the anomaly information for some problem is carry by multiple sensors. For example if there 
+        is a defective sensor, the others wan't raise any anomaly which will greatly help to pin the root cause down. This what 
+        [ref GDN] and [ref GTA] did by introducing a directed graph to model relationship between sensors. This information 
+        was then use, in this papers, to do forecasting using attention technics.\\
+        
+        \textit{Contamination}, the training data for those model will surely be some already bore tunnel data. 
+        During those bore, by Murphy's law, at some point, some things went wrong. The issue is, most method assume a anomaly
+        free dataset. This is why [ref IAD, LOE, Core Loss] proposed some modification to the training steps, to deal with this 
+        contamination. To do so, they generally modify the loss function to account for the uncertainty of the data and improve 
+        this uncertainty iteratively. This topic will be discus in greater detail in \ref{sect:contamination}.\\
+
+        \textit{Dimension reduction}, a large quantity of sensors, with a quite small data rate, even with a small time window
+        can make the input dimension of the model certainly significant. This can render the training hard and sensible to noise. 
+        to solve this issue most paper use some kind of dimension reduction. For example, [ref DAGMM] use a AE and use
+        a modify reconstruction error concatenated with the latent vector as an input to a GMM. Or [LSTM-AE] used a LSTM as
+        an AE to do forecasting.
+
 
         
     %\subfile{./plan.tex}
