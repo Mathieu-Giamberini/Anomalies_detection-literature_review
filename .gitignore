@@ -9,6 +9,10 @@ Citavi Attachments/
 /**/*.log
 /**/*.synctex.gz
 /**/*.out
+/**/*.run.xml
+/**/*.bbl
+/**/*.bcf
+/**/*.blg
 
 #Python
 .venv/

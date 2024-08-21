@@ -19,6 +19,9 @@
     grow subtree/.style={for tree={grow=#1}}, 
     grow' subtree/.style={for tree={grow'=#1}}}
 
+\usepackage{biblatex}
+\addbibresource{../section/8_Reference/bibliographie.bib}%
+
 \usepackage{subfiles} %import last
 
 \title{Anomaly detection in time series for Tunneling Boring Machines \\ \small{A literary review of useful method}}
@@ -32,6 +35,7 @@
     \end{abstract}
     
     \begin{multicols}{2}
+        \cite{dosReis.2016}
         \section*{Introduction}
             \subfile{../section/1_intro/intro.tex}
             %\newpage
@@ -55,5 +59,6 @@
             \subfile{../section/7_Conclusion/conclusion.tex}
     
     \end{multicols}
+    \printbibliography
 
 \end{document}
