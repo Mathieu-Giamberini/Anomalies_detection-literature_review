@@ -1,0 +1,3 @@
+To convert Categorie-Methode liste.xlsx to LaTeX:
+ - execute display-tree.py to create tree.json (if the xlsx was updated)
+ - execute treeToLatex.py

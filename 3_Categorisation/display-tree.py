@@ -153,8 +153,6 @@ for parent in tree.keys():
         nx_graph.add_edge(parent_id, child_id, weight=max_depth - depth)
 
 
-
-
 loss = getLoss(nx_graph, chosen,0.5)
 loss_max = np.max(loss[loss != np.inf])
 loss_min = np.min(loss[loss != np.inf])

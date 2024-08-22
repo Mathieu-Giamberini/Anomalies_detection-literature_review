@@ -80,7 +80,7 @@
     "ATF-UAD": {
         "children": [],
         "depth": 0.0,
-        "fullName": "Adversarial Time\u2013Frequency Reconstruction Network for Unsupervised Anomaly Detection",
+        "fullName": "Adversarial Time-Frequency Reconstruction Network for Unsupervised Anomaly Detection",
         "hideTex": false,
         "id": 109,
         "isChosen": false,
@@ -208,6 +208,15 @@
         "isChosen": true,
         "parentName": "add-on"
     },
+    "Control chart": {
+        "children": [],
+        "depth": 2.0,
+        "fullName": "Control chart",
+        "hideTex": false,
+        "id": 128,
+        "isChosen": false,
+        "parentName": "Index"
+    },
     "Core loss": {
         "children": [],
         "depth": 3.0,
@@ -267,7 +276,7 @@
     "DCGAN": {
         "children": [],
         "depth": 3.0,
-        "fullName": "\u00a0multi-time scale deep convolutional\u00a0generative adversarial network",
+        "fullName": "multi-time scale deep convolutional generative adversarial network",
         "hideTex": false,
         "id": 107,
         "isChosen": false,
@@ -378,7 +387,7 @@
     "ELM-MI": {
         "children": [],
         "depth": 2.0,
-        "fullName": "Extreme learning machine\u00a0and\u00a0mutual information\u00a0",
+        "fullName": "Extreme learning machine and mutual information ",
         "hideTex": false,
         "id": 105,
         "isChosen": false,
@@ -611,7 +620,8 @@
     "Index": {
         "children": [
             "FT",
-            "MAD-GAN"
+            "MAD-GAN",
+            "Control chart"
         ],
         "depth": 1.0,
         "fullName": "Index monitoring",
