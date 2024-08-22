@@ -9,8 +9,11 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{amssymb}
+
 \usepackage{acronym}  % For working with abbreviations http://mirrors.ctan.org/macros/latex/contrib/acronym/acronym.pdf
 \usepackage{mdframed}  % For framing the acronyms http://mirrors.ctan.org/macros/latex/contrib/mdframed/mdframed.pdf
+\usepackage[hidelinks]{hyperref}
+
 \usepackage{dsfont}
 \usepackage{forest}
 \useforestlibrary{edges}
@@ -22,6 +25,8 @@
 
 \usepackage{biblatex}
 \addbibresource{../section/8_Reference/bibliographie.bib}%
+
+\usepackage[toc,page]{appendix}
 
 \usepackage{subfiles} %import last
 
@@ -36,13 +41,12 @@
     \end{abstract}
     
     \begin{multicols}{2}
-        \cite{dosReis.2016}
         \section*{Introduction}
             \subfile{../section/1_intro/intro.tex}
             %\newpage
 
-        \section{Secondary sources}
-            \subfile{../section/2_Sources/sources.tex}
+        %\section{Secondary sources}
+        %    \subfile{../section/2_Sources/sources.tex}
 
         \section{Overview}
             \subfile{../section/3_Overview/overview.tex}
@@ -58,17 +62,11 @@
 
         \section*{Conclusion}
             \subfile{../section/7_Conclusion/conclusion.tex}
-    
-        \begin{mdframed}
-            \section*{Acronyms}
-            \begin{acronym}[XXXXX] % XXXXX refers to the max length on an acronym 
-                \acro{TBM}{Tunnel Boring Machine}
-                \acro{AD}{Anomaly Detection}
-                \acro{LSTM}{Long-Short Term Memory}
-            \end{acronym}
-        \end{mdframed}
 
     \end{multicols}
+
     \printbibliography
+
+    \subfile{../section/9_Appendices/appendices.tex}
 
 \end{document}
