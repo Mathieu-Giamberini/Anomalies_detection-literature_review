@@ -9,8 +9,9 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{acronym}  % For working with abbreviations http://mirrors.ctan.org/macros/latex/contrib/acronym/acronym.pdf
+\usepackage{mdframed}  % For framing the acronyms http://mirrors.ctan.org/macros/latex/contrib/mdframed/mdframed.pdf
 \usepackage{dsfont}
-
 \usepackage{forest}
 \useforestlibrary{edges}
 
@@ -58,6 +59,15 @@
         \section*{Conclusion}
             \subfile{../section/7_Conclusion/conclusion.tex}
     
+        \begin{mdframed}
+            \section*{Acronyms}
+            \begin{acronym}[XXXXX] % XXXXX refers to the max length on an acronym 
+                \acro{TBM}{Tunnel Boring Machine}
+                \acro{AD}{Anomaly Detection}
+                \acro{LSTM}{Long-Short Term Memory}
+            \end{acronym}
+        \end{mdframed}
+
     \end{multicols}
     \printbibliography
 

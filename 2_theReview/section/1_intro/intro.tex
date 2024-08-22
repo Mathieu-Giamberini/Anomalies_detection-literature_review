@@ -5,18 +5,22 @@
     %\subfile{definition/definition-AD.tex}
     %to edit, if no time use binary class definition 
 
-    By default, TBM (Tunnel Boring Machines) are complicated technical objects and involved  a lot of technologies working together. Any defect in the chain
+    By default, \acp{TBM} are complicated technical objects and involved a lot of technologies working together. Any defect in the chain
     could stop the entire machine. Therefore, detecting those before they become a real issue can save a lot of time and resources. Fortunately, the number
-    of sensors on the machines keeps raising  and thanks to platforms like Herrenknecht.Connected \cite{HKC.2024}, their data can be accessed anywhere by any authorized user. These data
+    of sensors on the machines keeps raising and thanks to platforms like Herrenknecht.Connected \cite{HKC.2024}, their data can be accessed anywhere by any authorized user. These data
     must carry a lot of information regarding the state of the machine, which begs the question of how to extract it to detect anomalies. At the time of writing,
-    the task is mostly done by experienced users of the TBM, e.g. a weird noise in the hydraulic pack, an odd torque increase on one of the main drive motors,
+    the task is mostly done by experienced users of the \ac{TBM}, e.g.~a weird noise in the hydraulic pack, an odd torque increase on one of the main drive motors,
     and so on. This method is clearly limited and uses only a small portion of the available data stream. Despite this, the problem of anomaly detection is quite
     old, and with the rise of machine learning technic, it keeps getting better. \\
-    Therefore, in this paper, we will, have a first look of at the literary landscape of Anomaly detection method (ADM). First, let's define exactly what we mean by that, given a multivariate time series: 
-    \[\mathcal{X} = (\textbf{x}_1, \dots \textbf{x}_t, \dots \textbf{x}_T) \in \mathbb{R}^{N \times T}\]
+    Therefore, in this paper, we will, have a first look of at the literary landscape of \ac{AD} methods. First, let's define exactly what we mean by that, given a multivariate time series: 
+    \begin{equation}
+        \mathcal{X} = (\textbf{x}_1, \dots \textbf{x}_t, \dots \textbf{x}_T) \in \mathbb{R}^{N \times T}
+    \end{equation}
     with $N$ the number of sensors and $T$ the number of temporal indices. The method $\mathcal{M} $ will return a binary category for each data point 
     telling where and when there is anomalies, ie:
-    \[\mathcal{M} : \mathbb{R}^{N \times T} \to \left\{0, 1\right\} ^{N \times T}\]
+    \begin{equation}
+        \mathcal{M} : \mathbb{R}^{N \times T} \to \left\{0, 1\right\} ^{N \times T} \, .
+    \end{equation}
     We need to address some looses ends with this definition. First, in most cases, there is no already labeled data to train the method on, and labeling it
     by hand is not feasible. So the method must be unsupervised, which raises the need for a systemic definition of anomalies. Most papers (ref) consider the
     training data to be normal and define some anomaly score, which tells how far away the new data is. Here, the methods will, be categorized based on the way

@@ -6,20 +6,20 @@
         \caption{Anomaly detection method categorization}
     \end{figure*}
 
-    Anomaly detection methods can be categorized in many ways. In this paper it's divided in two parts,
-    general method and useful ticks to improve theses. The former represent general ways to 
-    solve the AD problem. Its compose of three categorizes : forecasting, clustering and index monitoring.
-    The latter are so-called add-ons. The papers in this category present a AD method with some tricks that,
+    \ac{AD} methods can be categorized in many ways. In this paper is divided in two parts,
+    general methods and useful ticks to improve theses. The former represent general ways to 
+    solve the \ac{AD} problem. It is compose of three categorizes: forecasting (Sec~\ref{subsec:forecasting}), clustering (\ref{subsec:clustering}) and index monitoring (Sec.~\ref{subsec:indexing}).
+    The latter are so-called add-ons (Sec~\ref{subsec:add_ons}). The papers in this category present a \ac{AD} method with some tricks that,
     in our minds can be applied to any method to improve it.
-    \subsection{Forecasting Methods}
+    \subsection{Forecasting Methods}\label{subsec:forecasting}
         When working all day long with some equipment, you know it so well that, if asked, you could almost 
         predict the sound it will make in the near future. But if suddenly the sound doesn't match 
         your expectations you know there are some things wrong.
         That is the core idea for the forecasting method, predict the near future using some generative method
         and if the error goes over some threshold, the data point is labeled as an anomaly. Example of those technics
-        may be LSTM [ref claim LSTM is the best] or using time convolution (TCN) [Ref TCN].
+        may be \ac{LSTM} [ref claim LSTM is the best] or using time convolution (TCN) [Ref TCN].
     
-    \subsection{Clustering method}
+    \subsection{Clustering method}\label{subsec:clustering}
         While storing metric screws in the warehouse, someone picks up an imperial one, he wants to find any box to put it in.
         Therefor he will conclude there was an error in the shipment, even if he didn't know this type of screw. This is the main 
         idea for the clustering method, define clusters, if a new data point can't fit in one of them, it is labeled as an anomaly.  
@@ -28,7 +28,7 @@
         give less, strict categorizes [ref LOF]. Another method is to estimate the probability density function (PDF) 
         and put a threshold on low values. [ref DAGMM]
     
-    \subsection{Index monitoring}
+    \subsection{Index monitoring}\label{subsec:indexing}
         After assembly, the disks cutters there are put under pressure for some time. When the time is up, the 
         pressure is measured, if the pressure is too low, there is a problem somewhere. This is the intuition behind index 
         monitoring method, define some function with an acceptable range of normal values, if the values are outside the range 
@@ -36,7 +36,7 @@
         this context is referred as Control chart [ref Control chart]. Another example of application is [ref AR] which 
         use a modified wavelet transform to define a Health Index [ref HI] to monitor bearings. 
     
-    \subsection{Add-ones}
+    \subsection{Add-ones}\label{subsec:add_ons}
         In order to improve those techniques and solve issues intrinsic to the TBM case, here are some interesting solutions.\\
         \textit{Topology}, TBM AD is intrinsically a multivariate problem (ie there is more than one sensor on the machine).
         And it is safe to assume that the anomaly information for some problems is carried by multiple sensors. For example, if there 
@@ -53,7 +53,7 @@
         \textit{Dimension reduction}, a large quantity of sensors, with a quite small data rate, even with a small time window
         can make the input dimension of the model certainly significant. This can render the training hard and sensitive to noise. 
         to solve this issue, most papers use some kind of dimension reduction. For example, [ref DAGMM] uses an AE and 
-        a modified reconstruction error concatenated with the latent vector as an input to a GMM. Or [LSTM-AE] used a LSTM as
+        a modified reconstruction error concatenated with the latent vector as an input to a GMM. Or [LSTM-AE] used a \ac{LSTM} as
         an AE to do forecasting.
 
         
