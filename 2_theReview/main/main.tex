@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[twocolumn]{article}
 \usepackage{geometry}
 \geometry{hmargin=1cm,vmargin=2cm}
 \renewcommand\labelitemi{--}
@@ -36,14 +36,14 @@
 
 \begin{document}
     \maketitle
-    \begin{abstract}
-        
-    \end{abstract}
+    %\begin{abstract}
+    %    
+    %\end{abstract}
     
-    \begin{multicols}{2}
+    %\begin{multicols}{2}
+    
         \section*{Introduction}
             \subfile{../section/1_intro/intro.tex}
-            %\newpage
 
         %\section{Secondary sources}
         %    \subfile{../section/2_Sources/sources.tex}
@@ -62,11 +62,13 @@
 
         \section*{Conclusion}
             \subfile{../section/7_Conclusion/conclusion.tex}
-
-    \end{multicols}
+    
+    %\end{multicols}
 
     \printbibliography
 
+    \newpage
+    \onecolumn
     \subfile{../section/9_Appendices/appendices.tex}
 
 \end{document}

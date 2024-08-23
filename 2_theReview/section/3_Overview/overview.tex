@@ -7,23 +7,23 @@
     \end{figure*}
 
     \ac{AD} methods can be categorized in many ways. In this paper is divided in two parts,
-    general methods and useful ticks to improve theses. The former represent general ways to 
-    solve the \ac{AD} problem. It is compose of three categorizes: forecasting (Sec~\ref{subsec:forecasting}), clustering (\ref{subsec:clustering}) and index monitoring (Sec.~\ref{subsec:indexing}).
-    The latter are so-called add-ons (Sec~\ref{subsec:add_ons}). The papers in this category present a \ac{AD} method with some tricks that,
+    general methods and useful tricks to improve theses. The former represents general ways to 
+    solve the \ac{AD} problem. It is composed of three categorizes: forecasting (Sec~\ref{subsec:forecasting}), clustering (\ref{subsec:clustering}) and index monitoring (Sec.~\ref{subsec:indexing}).
+    The latter are so-called add-ons (Sec~\ref{subsec:add_ons}). The papers in this category present an \ac{AD} method with some tricks that,
     in our minds can be applied to any method to improve it.
     \subsection{Forecasting Methods}\label{subsec:forecasting}
-        When working all day long with some equipment, you know it so well that, if asked, you could almost 
+        When working with some equipment, you know it so well that, if asked, you could almost 
         predict the sound it will make in the near future. But if suddenly the sound doesn't match 
         your expectations you know there are some things wrong.
         That is the core idea for the forecasting method, predict the near future using some generative method
-        and if the error goes over some threshold, the data point is labeled as an anomaly. Example of those technics
-        may be \ac{LSTM} [ref claim LSTM is the best] or using time convolution (TCN) [Ref TCN].
+        and if the error goes over some threshold, the data point is labeled as an anomaly. Example of those forecasting technics
+        may be \ac{LSTM} [ref claim LSTM is the best] or using \ac{TCN} [Ref TCN].
     
     \subsection{Clustering method}\label{subsec:clustering}
         While storing metric screws in the warehouse, someone picks up an imperial one, he wants to find any box to put it in.
-        Therefor he will conclude there was an error in the shipment, even if he didn't know this type of screw. This is the main 
-        idea for the clustering method, define clusters, if a new data point can't fit in one of them, it is labeled as an anomaly.  
-        There are multiple ways to define the cluster. A good part uses some defined distance [ref DTW] function and uses a variant of K-nearest-neighbor (KNN)
+        Therefore he will conclude there was an error in the shipment, even if he didn't know this type of screw. This is the main 
+        idea for the clustering method, define clusters, if a new data point can't fit in one of them, it is labeled as an anomaly.
+        There are multiple ways to define the cluster. A good part uses some defined distance [ref DTW] function and uses a variant of \ac{KNN}
         [ref DBSCAN]. Similarly, use the density of the data point in relation to the training data, which will 
         give less, strict categorizes [ref LOF]. Another method is to estimate the probability density function (PDF) 
         and put a threshold on low values. [ref DAGMM]
@@ -32,7 +32,7 @@
         After assembly, the disks cutters there are put under pressure for some time. When the time is up, the 
         pressure is measured, if the pressure is too low, there is a problem somewhere. This is the intuition behind index 
         monitoring method, define some function with an acceptable range of normal values, if the values are outside the range 
-        its mark as anomaly. This technic is one of the oldest, simplest and most used in the manufacturing industries, in
+        it's marked as an anomaly. This technic is one of the oldest, simplest and most used in the manufacturing industries, in
         this context is referred as Control chart [ref Control chart]. Another example of application is [ref AR] which 
         use a modified wavelet transform to define a Health Index [ref HI] to monitor bearings. 
     
