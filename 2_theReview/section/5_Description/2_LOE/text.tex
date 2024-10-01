@@ -1,5 +1,29 @@
 \documentclass[../description.tex]{subfiles}
 
 \begin{document}
-    
+    If the contamination of the training data is if not dealt with, the method will learn the anomalies as normal data.
+    In a supervised setting, the problem would not arise, the known labels would just be directly used to train the model.
+    Nonetheless, in our context, the "normal" data should be in majority and so the most influential on the gradient at the start.
+    In other words, the assumption is, after the first few iterations the method already has some anomaly detection capability. 
+    Using those would make it possible to act as if we were in a supervised settings. 
+
+    Inspired by this, \cite{ChenQiu.2022} proposed to learn the unknown labels of the training data. 
+    In each optimization step they guessed the most probable anomalies using the current method parameter $\theta$ and 
+    use this info to update $\theta$ for the next iteration.
+
+    More precisely they first define $\alpha$ the possible contamination rate, 
+    $\mathcal{L}_n^\theta(x)$ a loss function aimed to be minimized for "normal" data point $x$,
+    likewise $\mathcal{L}_a^\theta(x)$ for anomalies and $S^\theta(x)$ being the anomaly score used for the detection.
+    To then combine it in a global loss function :
+    \begin{equation}
+        \mathcal{L}^\theta = \sum_{i=1}^{N} (1-y_i)\mathcal{L}_n^\theta(x) + y_i\mathcal{L}_a^\theta(x)
+    \end{equation}
+
+    Where $y_i$ is the anomaly label, which for each optimization iteration, is assigned $1$ for the $(1-\alpha)$-quartile
+    of the rank anomalies score $S^\theta(x_i)$ and $0$ to the remaining ones.\\
+    With the same core idea \cite{Kim.2023} and \cite{Shang.2023} dropped the $\mathcal{L}_a^\theta(x)$ and used more soft classes
+    (See the original paper for more information).\\
+
+    For the Tunneling applications look, in the author's opinion, quite promising. It's very general, easy to implement, 
+    the only downside is this initial assumption, which is possible but not proven.
 \end{document}

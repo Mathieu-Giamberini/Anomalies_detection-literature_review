@@ -199,7 +199,7 @@
         "children": [
             "Core loss",
             "LOE",
-            "IAD "
+            "IAD"
         ],
         "depth": 2.0,
         "fullName": "Deal with contamiated training data for UAD",
@@ -249,7 +249,7 @@
             "PRDAGMM"
         ],
         "depth": 3.0,
-        "fullName": null,
+        "fullName": "Deep Autoencoding Gaussian Mixture Model",
         "hideTex": false,
         "id": 72,
         "isChosen": true,
@@ -552,7 +552,7 @@
     "GTA": {
         "children": [],
         "depth": 3.0,
-        "fullName": null,
+        "fullName": "Graph learning with Transformer for Anomaly detection",
         "hideTex": false,
         "id": 84,
         "isChosen": false,
@@ -588,7 +588,7 @@
         "isChosen": false,
         "parentName": "HTM"
     },
-    "IAD ": {
+    "IAD": {
         "children": [],
         "depth": 3.0,
         "fullName": "Iterative Anomaly Detection",

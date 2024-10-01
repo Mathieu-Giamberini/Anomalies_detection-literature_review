@@ -29,13 +29,13 @@ def treeTotree_rec(tree:dict, root:str, depth:int=0) -> dict:
     return tree_rec
 
 
-def dictToTex(tree_rec:dict, infos:dict, depth:int = 0) -> str:
+def infoToTex(tree_rec:dict, infos:dict, depth:int = 0) -> str:
     """Convert dict tree to forest (LaTeX) tree"""
     tree_tex = ""
 
     for name, sub_tree in tree_rec.items():
         if not infos[name]["hideTex"]:
-            tree_tex += treeSyntax(name, infos[name], dictToTex(sub_tree, infos, depth+1), depth, 4)
+            tree_tex += treeSyntax(name, infos[name], infoToTex(sub_tree, infos, depth+1), depth, 4)
 
     return tree_tex
 
@@ -118,7 +118,7 @@ with open(json_tree_path, "r") as json_tree:
     tree = json.load(json_tree)
 
 
-tree_forest_tex =dictToTex(treeTotree_rec(tree, "AD"), tree)
+tree_forest_tex =infoToTex(treeTotree_rec(tree, "AD"), tree)
 
 #Main
 saveTreeToTex(tree_template_main_path, LaTeX_path_tree + "gen\\tree.tex", tree_forest_tex)
