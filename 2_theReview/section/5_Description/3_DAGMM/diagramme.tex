@@ -1,0 +1,12 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}[darkstyle/.style={circle,draw,fill=gray!40,minimum size=1}]
+    \foreach \y in {0,...,4} 
+        {
+        \node [darkstyle]  (\y) at (0,.5*\y) {};} 
+  
+  \end{tikzpicture}
+\end{document}
