@@ -1,5 +1,9 @@
 \documentclass[../description.tex]{subfiles}
 
 \begin{document}
-    
+    For a continuous clustering method, \cite{BoZong.2018} propose to combine a \acr{AE} with a \acr{GMM}.
+    They use the concatenation of the reconstruction error and the latten vector as the input for the \acr{GMM}
+    The idea is to use the information of the latten space as information to fine-tune the anomaly score.
+    For the TBM application it could maybe help the method to not raise the change of geologies as an anomaly.
+    An other benefit of this method, it doesn't use the EM step, and learn the GMM classes $\pi_k$ with an MLP.
 \end{document}
